@@ -21,8 +21,9 @@
               </li>
               <li class="main-nav__item">
                 <form class="search main-nav__search" method="get" action="https://echo.htmlacademy.ru">
-                  <button class="search-btn main-nav__item-icon" type="submit">Поиск</button>
-                  <input type="text" name="search-value" id="search-input" value="Поиск по сайту">
+                  <button class="search__button" type="submit">Поиск</button>
+                  <input class="search__input" type="text" name="search-value" id="search-input" value="">
+                  <label for="search-input">Поиск по сайту</label>
                 </form>
               </li>
               <li class="main-nav__item">
@@ -39,18 +40,29 @@
     </header>
     <main class="page-main">
         <section class="main-slide">
-          <h2>Милые штуки ручной работы для дома</h2>
+          <h1 class="main-slide__title">Милые штуки ручной работы для дома</h1>
         </section>
-        <div class="category">
-          <div class="category__item category--interior"><a href="#" class="category__link">Предметы интерьера</a></div>
-          <div class="category__item category--games"><a href="#" class="category__link">Детские игрушки</a></div>
-        </div>
-        <section class="page-products">
+        <ul class="category">
+          <li class="category__item category__item--interior">
+            <a href="#" class="category__link">
+              <span class="category__name"> Предметы интерьера</span>
+            </a>
+          </li>
+          <li class="category__item category__item--games">
+            <a href="#" class="category__link">
+              <span class="category__name">Детские игрушки</span>
+            </a>
+          </li>
+        </ul>
+        <section class="page-section page-products">
             <div class="product">
-              <form action="https://echo.htmlacademy.ru" class="product__form">
                 <div class="product__info">
-                  <h2 class="product__name">Вязаные корзинки</h2>
-                  <span class="product__category product__category--week">ТОВАР НЕДЕЛИ</span>
+                  <h2 class="product__name">
+                    <a href="#">
+                    Вязаные корзинки
+                    </a>
+                  </h2>
+                  <strong class="product__category product__category--week">ТОВАР НЕДЕЛИ</strong>
                   <p class="product__descr">
                     Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
                   </p>
@@ -72,64 +84,61 @@
                   </table>
                 </div>
                 <div class="product__img">
+                  <a href="#">
                   <img src="http://placehold.it/240x315" alt="Вязаные корзинки">
+                  </a>
                 </div>
                 <div class="price-box price-box--main">
                     Цена
                     <span class="price price--now">990 руб.</span>
                 </div>
-                <button type="submit" class="btn btn--order">Заказать</button>
+                <button type="button" class="btn btn--order">Заказать</button>
                 <div class="modal modal--order">
-                  <b class="modal__title">Добавить в корзину</b>
-                  <div class="product__mod">
-                    <div class="product__mod-name">Выберите размер:</div>
-                    <div class="product__mod-items">
-                      <input type="radio" name="size" id="S" value="S">
-                      <label class="product__mod-label" for="S">S</label>
-                      <input type="radio" name="size" id="M" value="M">
-                      <label class="product__mod-label" for="M">M</label>
-                      <input type="radio" name="size" id="L" value="L">
-                      <label class="product__mod-label" for="L">L</label>
-                    </div>
-                  </div>
-                  <button type="submit" class="btn btn--green btn--add-cart">Добавить</button>
+                  <form action="https://echo.htmlacademy.ru" class="product__form">
+                    <h3 class="modal__title">Добавить в корзину</h3>
+                    <fieldset class="product__mod">
+                      <legend class="product__mod-name">Выберите размер:</legend>
+                      <div class="product__mod-items">
+                        <input type="radio" name="size" id="S" value="S">
+                        <label class="product__mod-label" for="S">S</label>
+                        <input type="radio" name="size" id="M" value="M">
+                        <label class="product__mod-label" for="M">M</label>
+                        <input type="radio" name="size" id="L" value="L">
+                        <label class="product__mod-label" for="L">L</label>
+                      </div>
+                    </fieldset>
+                    <button type="submit" class="btn btn--green product__add-button">Добавить</button>
+                  </form>
                 </div>
-              </form>
             </div>
         </section>
         <section class="page-section about">
           <h2 class="page-section__title about__title">Коротко о нас:</h2>
           <ul class="about__list">
-            <li class="about__item">
-              <img src="http://placehold.it/32x37" alt="" class="about__img">
+            <li class="about__item about__item--icon-1">
               <span class="about__descr">Экологически чистые материалы</span>
             </li>
-            <li class="about__item">
-              <img src="http://placehold.it/32x37" alt="" class="about__img">
+            <li class="about__item about__item--icon-2">
               <span class="about__descr">Скандинавский стиль по российской цене</span>
             </li>
-            <li class="about__item">
-              <img src="http://placehold.it/32x37" alt="" class="about__img">
+            <li class="about__item about__item--icon-3">
               <span class="about__descr">Увеличивает лайкина фотографиях</span>
             </li>
-            <li class="about__item">
-              <img src="http://placehold.it/32x37" alt="" class="about__img">
+            <li class="about__item about__item--icon-4">
               <span class="about__descr">Связано вручную с любовью и умилением</span>
             </li>
-            <li class="about__item">
-              <img src="http://placehold.it/32x37" alt="" class="about__img">
+            <li class="about__item about__item--icon-5">
               <span class="about__descr">Поддержка отечественного производителя</span>
             </li>
-            <li class="about__item">
-              <img src="http://placehold.it/32x37" alt="" class="about__img">
+            <li class="about__item about__item--icon-6">
               <span class="about__descr">Поставляется в подарочной упаковке</span>
             </li>
           </ul>
         </section>
         <section class="page-section review">
           <h2 class="page-section__title review__title">Отзывы</h2>
-          <div class="review__wrapper">
-            <div class="review__item">
+          <ul class="review__wrapper">
+            <li class="review__item">
               <p class="review__descr">
                 Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
               </p>
@@ -139,17 +148,17 @@
                 </b>
                 <a href="#" class="review__author-link">@misssssiskras</a>
               </div>
-            </div>
-          </div>
+            </li>
+          </ul>
           <div class="review__btns">
             <button class="review__btn review__btn--prev" type="button">Предыдущий</button>
             <button class="review__btn review__btn--next" type="button">Следующий</button>
           </div>
-          <a href="#" class="btn btn--review">Написать</a>
+          <a href="#" class="btn">Написать</a>
         </section>
         <section class="page-section main-contacts">
           <h2 class="page-section__title main-contacts__title">Контакты</h2>
-          <div class="main-contacts contacts">
+          <div class="contacts">
             <div class="contacts__item">
               <span class="contacts__title">e-mail:</span>
               <a class="contacts__link contacts__link--email" href="emailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
@@ -165,7 +174,7 @@
             <img src="http://placehold.it/800x450" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
           </div>
           <div class="main-contacts__feedback">
-            <a href="#" class="btn btn--feedback">Напишите нам</a>
+            <a href="#" class="btn">Напишите нам</a>
           </div>
         </section>
     </main>

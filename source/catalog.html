@@ -10,64 +10,71 @@
         <img src="http://placehold.it/86x35" alt="" class="page-header__logo-img">
       </a>
       <nav class="main-nav">
-          <button class="main-nav__button" type="button">Открыть меню</button>
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list">
-              <li class="main-nav__item">
-                <a href="#" class="main-nav__link">Каталог товаров</a>
-              </li>
-              <li class="main-nav__item">
-                <a href="#" class="main-nav__link">Вязание на заказ</a>
-              </li>
-              <li class="main-nav__item">
-                <form class="search main-nav__search" method="get" action="https://echo.htmlacademy.ru">
-                  <button class="search-btn main-nav__item-icon" type="submit">Поиск</button>
-                  <input type="text" name="search-value" id="search-input" value="Поиск по сайту">
-                </form>
-              </li>
-              <li class="main-nav__item">
-                  <div class="cart main-nav__cart">
-                    Корзина:
-                    <a class="cart__count">
-                      пока пуста
-                    </a>
-                  </div>
-              </li>
-            </ul>
-          </div>
+        <button class="main-nav__button" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">Каталог товаров</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">Вязание на заказ</a>
+            </li>
+            <li class="main-nav__item">
+              <form class="search main-nav__search" method="get" action="https://echo.htmlacademy.ru">
+                <button class="search__button" type="submit">Поиск</button>
+                <input class="search__input" type="text" name="search-value" id="search-input" value="">
+                <label for="search-input">Поиск по сайту</label>
+              </form>
+            </li>
+            <li class="main-nav__item">
+              <div class="cart main-nav__cart">
+                Корзина:
+                <a class="cart__count">
+                  пока пуста
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
     <main class="page-catalog">
       <h1 class="page-title">Каталог товаров</h1>
       <div class="products-grid">
-        <div class="product product--catalog">
+        <article class="product product--catalog">
           <form action="https://echo.htmlacademy.ru" method="get" class="product__form">
             <div class="product__img">
+              <a href="#">
               <img src="http://placehold.it/260x195" alt="Зайчик-попрыгайчик">
+              </a>
             </div>
             <div class="product__info">
-              <h2 class="product__name">Зайчик-попрыгайчик</h2>
-              <div class="product__param">Рост 30 см, вес 200 г</div>
+              <h2 class="product__name">
+                <a href="">
+                Зайчик-попрыгайчик
+                </a>
+              </h2>
+              <p class="product__param">Рост 30 см, вес 200 г</p>
             </div>
             <div class="product__action">
               <div class="price-box price-box--catalog">
                   <span class="price price--now">1 200 руб.</span>
               </div>
-              <button type="submit" class="btn--add-cart">В корзину</button>
+              <button type="submit" class="add-cart">В корзину</button>
             </div>
           </form>
-        </div>
-        <div class="product product--promo">
-          <form action="https://echo.htmlacademy.ru" method="get" class="product__form">
-            <h2 class="product__name product__name--icon">Процесс производства</h2>
-            <div class="product__img">
-              <a class="product__link" href="#">
+        </article>
+        <div class="product-promo">
+          <form action="https://echo.htmlacademy.ru" method="get" class="product-promo__form">
+            <h2 class="product-promo__name product__name--icon">Процесс производства</h2>
+            <div class="product-promo__img">
+              <a class="product-promo__link" href="#">
                 <img src="http://placehold.it/260x150" alt="">
               </a>
             </div>
-            <div class="product__descr">
+            <p class="product__descr">
                  По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
-            </div>
+            </p>
             <button type="submit" class="btn">Сделать заказ</button>
           </form>
         </div>
