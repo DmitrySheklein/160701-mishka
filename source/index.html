@@ -23,7 +23,7 @@
                 <form class="search main-nav__search" method="get" action="https://echo.htmlacademy.ru">
                   <button class="search__button" type="submit">Поиск</button>
                   <input class="search__input" type="text" name="search-value" id="search-input" value="">
-                  <label for="search-input">Поиск по сайту</label>
+                  <label class="search__label" for="search-input">Поиск по сайту</label>
                 </form>
               </li>
               <li class="main-nav__item">
@@ -54,19 +54,19 @@
             </a>
           </li>
         </ul>
-        <section class="page-section page-products">
-            <div class="product">
-                <div class="product__info">
-                  <h2 class="product__name">
+        <section class="page-products">
+            <div class="recomended-product">
+                <div class="recomended-product__info">
+                  <h2 class="recomended-product__name">
                     <a href="#">
                     Вязаные корзинки
                     </a>
                   </h2>
-                  <strong class="product__category product__category--week">ТОВАР НЕДЕЛИ</strong>
-                  <p class="product__descr">
+                  <strong class="recomended-product__category recomended-product__category--week">ТОВАР НЕДЕЛИ</strong>
+                  <p class="recomended-product__descr">
                     Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
                   </p>
-                  <table class="product__features features">
+                  <table class="recomended-product__features features">
                     <tbody>
                       <tr class="features__item">
                         <td class="features__name">Цвет:</td>
@@ -83,7 +83,7 @@
                     </tbody>
                   </table>
                 </div>
-                <div class="product__img">
+                <div class="recomended-product__img">
                   <a href="#">
                   <img src="http://placehold.it/240x315" alt="Вязаные корзинки">
                   </a>
@@ -94,20 +94,20 @@
                 </div>
                 <button type="button" class="btn btn--order">Заказать</button>
                 <div class="modal modal--order">
-                  <form action="https://echo.htmlacademy.ru" class="product__form">
+                  <form action="https://echo.htmlacademy.ru" class="recomended-product__form">
                     <h3 class="modal__title">Добавить в корзину</h3>
-                    <fieldset class="product__mod">
-                      <legend class="product__mod-name">Выберите размер:</legend>
-                      <div class="product__mod-items">
+                    <fieldset class="recomended-product__mod">
+                      <legend class="recomended-product__mod-name">Выберите размер:</legend>
+                      <div class="recomended-product__mod-items">
                         <input type="radio" name="size" id="S" value="S">
-                        <label class="product__mod-label" for="S">S</label>
+                        <label class="recomended-product__mod-label" for="S">S</label>
                         <input type="radio" name="size" id="M" value="M">
-                        <label class="product__mod-label" for="M">M</label>
+                        <label class="recomended-product__mod-label" for="M">M</label>
                         <input type="radio" name="size" id="L" value="L">
-                        <label class="product__mod-label" for="L">L</label>
+                        <label class="recomended-product__mod-label" for="L">L</label>
                       </div>
                     </fieldset>
-                    <button type="submit" class="btn btn--green product__add-button">Добавить</button>
+                    <button type="submit" class="btn btn--green recomended-product__add-button">Добавить</button>
                   </form>
                 </div>
             </div>
@@ -115,22 +115,22 @@
         <section class="page-section about">
           <h2 class="page-section__title about__title">Коротко о нас:</h2>
           <ul class="about__list">
-            <li class="about__item about__item--icon-1">
+            <li class="about__item about__item--icon-flower">
               <span class="about__descr">Экологически чистые материалы</span>
             </li>
-            <li class="about__item about__item--icon-2">
+            <li class="about__item about__item--icon-money">
               <span class="about__descr">Скандинавский стиль по российской цене</span>
             </li>
-            <li class="about__item about__item--icon-3">
+            <li class="about__item about__item--icon-heart">
               <span class="about__descr">Увеличивает лайкина фотографиях</span>
             </li>
-            <li class="about__item about__item--icon-4">
+            <li class="about__item about__item--icon-ball">
               <span class="about__descr">Связано вручную с любовью и умилением</span>
             </li>
-            <li class="about__item about__item--icon-5">
+            <li class="about__item about__item--icon-support">
               <span class="about__descr">Поддержка отечественного производителя</span>
             </li>
-            <li class="about__item about__item--icon-6">
+            <li class="about__item about__item--icon-gift">
               <span class="about__descr">Поставляется в подарочной упаковке</span>
             </li>
           </ul>
