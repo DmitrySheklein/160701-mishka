@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a href="#" class="page-header__logo">
+        <img src="http://placehold.it/86x35" alt="" class="page-header__logo-img">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__button" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">Каталог товаров</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">Вязание на заказ</a>
+            </li>
+            <li class="main-nav__item">
+              <form class="search main-nav__search" method="get" action="https://echo.htmlacademy.ru">
+                <button class="search__button" type="submit">Поиск</button>
+                <input class="search__input" type="text" name="search-value" id="search-input" value="">
+                <label for="search-input">Поиск по сайту</label>
+              </form>
+            </li>
+            <li class="main-nav__item">
+              <div class="cart main-nav__cart">
+                Корзина:
+                <a class="cart__count">
+                  пока пуста
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="page-catalog">
+      <h1 class="page-title">Каталог товаров</h1>
+      <div class="products-grid">
+        <article class="product product--catalog">
+          <form action="https://echo.htmlacademy.ru" method="get" class="product__form">
+            <div class="product__img">
+              <a href="#">
+              <img src="http://placehold.it/260x195" alt="Зайчик-попрыгайчик">
+              </a>
+            </div>
+            <div class="product__info">
+              <h2 class="product__name">
+                <a href="">
+                Зайчик-попрыгайчик
+                </a>
+              </h2>
+              <p class="product__param">Рост 30 см, вес 200 г</p>
+            </div>
+            <div class="product__action">
+              <div class="price-box price-box--catalog">
+                  <span class="price price--now">1 200 руб.</span>
+              </div>
+              <button type="submit" class="btn btn--add-cart">В корзину</button>
+            </div>
+          </form>
+        </article>
+        <article class="product product--catalog">
+          <form action="https://echo.htmlacademy.ru" method="get" class="product__form">
+            <div class="product__img">
+              <a href="#">
+              <img src="http://placehold.it/260x195" alt="Корзинка для белья">
+              </a>
+            </div>
+            <div class="product__info">
+              <h2 class="product__name">
+                <a href="">
+                Корзинка для белья
+                </a>
+              </h2>
+              <p class="product__param">Диаметр 15 см, высота 10 см</p>
+            </div>
+            <div class="product__action">
+              <div class="price-box price-box--catalog">
+                  <span class="price price--now">690 руб.</span>
+              </div>
+              <button type="submit" class="btn btn--add-cart">В корзину</button>
+            </div>
+          </form>
+        </article>
+        <article class="product product--catalog">
+          <form action="https://echo.htmlacademy.ru" method="get" class="product__form">
+            <div class="product__img">
+              <a href="#">
+              <img src="http://placehold.it/260x195" alt="Корзинка для белья">
+              </a>
+            </div>
+            <div class="product__info">
+              <h2 class="product__name">
+                <a href="">
+                Большая корзинка для игрушек
+                </a>
+              </h2>
+              <p class="product__param">Диаметр 30 см, высота 30 см</p>
+            </div>
+            <div class="product__action">
+              <div class="price-box price-box--catalog">
+                  <span class="price price--now">1 500 руб.</span>
+              </div>
+              <button type="submit" class="btn btn--add-cart">В корзину</button>
+            </div>
+          </form>
+        </article>
+        <div class="product-promo">
+          <form action="https://echo.htmlacademy.ru" method="get" class="product-promo__form">
+            <h2 class="product-promo__name product__name--icon">Процесс производства</h2>
+            <div class="product-promo__img">
+              <a class="product-promo__link" href="#">
+                <img src="http://placehold.it/260x150" alt="">
+              </a>
+            </div>
+            <p class="product__descr">
+                По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
+            </p>
+            <button type="submit" class="btn">Сделать заказ</button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer class="page-footer">
+        <div class="page-footer__wrapper">
+          <div class="page-footer__social social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a href="#" class="social__link social__link--inst">Мы в Инстаграме</a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link social__link--fb">Мы в Фейсбуке</a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link social__link--tw">Мы в Вконтакте</a>
+              </li>
+            </ul>
+          </div>
+          <div class="page-footer__copyright copyright">
+            <b class="copyright__text">Разработано:</b>
+            <a href="https://htmlacademy.ru/intensive/adaptive" class="btn copyright__link">
+              HTML Academy
+            </a>
+          </div>
+        </div>
+    </footer>
+
+
+
+  </body>
+</html>
