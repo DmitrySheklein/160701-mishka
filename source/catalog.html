@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
@@ -38,7 +39,7 @@
         </div>
       </nav>
     </header>
-    <main class="page-catalog">
+    <main class="page-main">
       <h1 class="page-title">Каталог товаров</h1>
       <div class="products-grid">
         <article class="product product--catalog">
@@ -55,12 +56,11 @@
                 </a>
               </h2>
               <p class="product__param">Рост 30 см, вес 200 г</p>
-            </div>
-            <div class="product__action">
-              <div class="price-box price-box--catalog">
+              <div class="product__action">
+                <div class="price-box price-box--catalog">
                   <span class="price price--now">1 200 руб.</span>
-              </div>
-              <button type="submit" class="btn btn--add-cart">В корзину</button>
+                </div>
+                <button type="submit" class="btn btn--add-cart">В корзину</button>
                 <div class="modal-order">
                   <form action="https://echo.htmlacademy.ru" class="modal-order__form">
                     <h3 class="modal-order__title">Добавить в корзину</h3>
@@ -78,6 +78,7 @@
                     <button type="submit" class="btn btn--green modal-order__add-button">Добавить</button>
                   </form>
                 </div>
+              </div>
             </div>
           </form>
         </article>
@@ -95,28 +96,28 @@
                 </a>
               </h2>
               <p class="product__param">Диаметр 15 см, высота 10 см</p>
-            </div>
-            <div class="product__action">
-              <div class="price-box price-box--catalog">
-                  <span class="price price--now">690 руб.</span>
-              </div>
-              <button type="submit" class="btn btn--add-cart">В корзину</button>
-              <div class="modal-order">
-                <form action="https://echo.htmlacademy.ru" class="modal-order__form">
-                  <h3 class="modal-order__title">Добавить в корзину</h3>
-                  <fieldset class="modal-order__mod">
-                    <legend class="modal-order__mod-name">Выберите размер:</legend>
-                    <div class="modal-order__mod-items">
-                      <input class="modal-order__mod-input" type="radio" name="size" id="S" value="S">
-                      <label class="modal-order__mod-label" for="S">S</label>
-                      <input class="modal-order__mod-input" type="radio" name="size" id="M" value="M">
-                      <label class="modal-order__mod-label" for="M">M</label>
-                      <input class="modal-order__mod-input" type="radio" name="size" id="L" value="L">
-                      <label class="modal-order__mod-label" for="L">L</label>
-                    </div>
-                  </fieldset>
-                  <button type="submit" class="btn btn--green modal-order__add-button">Добавить</button>
-                </form>
+              <div class="product__action">
+                <div class="price-box price-box--catalog">
+                    <span class="price price--now">690 руб.</span>
+                </div>
+                <button type="submit" class="btn btn--add-cart">В корзину</button>
+                <div class="modal-order">
+                  <form action="https://echo.htmlacademy.ru" class="modal-order__form">
+                    <h3 class="modal-order__title">Добавить в корзину</h3>
+                    <fieldset class="modal-order__mod">
+                      <legend class="modal-order__mod-name">Выберите размер:</legend>
+                      <div class="modal-order__mod-items">
+                        <input class="modal-order__mod-input" type="radio" name="size" id="S" value="S">
+                        <label class="modal-order__mod-label" for="S">S</label>
+                        <input class="modal-order__mod-input" type="radio" name="size" id="M" value="M">
+                        <label class="modal-order__mod-label" for="M">M</label>
+                        <input class="modal-order__mod-input" type="radio" name="size" id="L" value="L">
+                        <label class="modal-order__mod-label" for="L">L</label>
+                      </div>
+                    </fieldset>
+                    <button type="submit" class="btn btn--green modal-order__add-button">Добавить</button>
+                  </form>
+                </div>
               </div>
             </div>
           </form>
@@ -135,44 +136,46 @@
                 </a>
               </h2>
               <p class="product__param">Диаметр 30 см, высота 30 см</p>
-            </div>
-            <div class="product__action">
-              <div class="price-box price-box--catalog">
-                  <span class="price price--now">1 500 руб.</span>
-              </div>
-              <button type="submit" class="btn btn--add-cart">В корзину</button>
-              <div class="modal-order">
-                <form action="https://echo.htmlacademy.ru" class="modal-order__form">
-                  <h3 class="modal-order__title">Добавить в корзину</h3>
-                  <fieldset class="modal-order__mod">
-                    <legend class="modal-order__mod-name">Выберите размер:</legend>
-                    <div class="modal-order__mod-items">
-                      <input class="modal-order__mod-input" type="radio" name="size" id="S" value="S">
-                      <label class="modal-order__mod-label" for="S">S</label>
-                      <input class="modal-order__mod-input" type="radio" name="size" id="M" value="M">
-                      <label class="modal-order__mod-label" for="M">M</label>
-                      <input class="modal-order__mod-input" type="radio" name="size" id="L" value="L">
-                      <label class="modal-order__mod-label" for="L">L</label>
-                    </div>
-                  </fieldset>
-                  <button type="submit" class="btn btn--green modal-order__add-button">Добавить</button>
-                </form>
+              <div class="product__action">
+                <div class="price-box price-box--catalog">
+                    <span class="price price--now">1 500 руб.</span>
+                </div>
+                <button type="submit" class="btn btn--add-cart">В корзину</button>
+                <div class="modal-order">
+                  <form action="https://echo.htmlacademy.ru" class="modal-order__form">
+                    <h3 class="modal-order__title">Добавить в корзину</h3>
+                    <fieldset class="modal-order__mod">
+                      <legend class="modal-order__mod-name">Выберите размер:</legend>
+                      <div class="modal-order__mod-items">
+                        <input class="modal-order__mod-input" type="radio" name="size" id="S" value="S">
+                        <label class="modal-order__mod-label" for="S">S</label>
+                        <input class="modal-order__mod-input" type="radio" name="size" id="M" value="M">
+                        <label class="modal-order__mod-label" for="M">M</label>
+                        <input class="modal-order__mod-input" type="radio" name="size" id="L" value="L">
+                        <label class="modal-order__mod-label" for="L">L</label>
+                      </div>
+                    </fieldset>
+                    <button type="submit" class="btn btn--green modal-order__add-button">Добавить</button>
+                  </form>
+                </div>
               </div>
             </div>
           </form>
         </article>
         <div class="product-promo">
           <form action="https://echo.htmlacademy.ru" method="get" class="product-promo__form">
-            <h2 class="product-promo__name product__name--icon">Процесс производства</h2>
+            <h2 class="product-promo__name product-promo__name--icon">Процесс производства</h2>
             <div class="product-promo__img">
               <a class="product-promo__link" href="#">
                 <img src="http://placehold.it/260x150" alt="">
               </a>
             </div>
-            <p class="product__descr">
-                По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
-            </p>
-            <button type="submit" class="btn">Сделать заказ</button>
+            <div class="product-promo__info">
+              <p class="product-promo__descr">
+                  По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
+              </p>
+              <button type="submit" class="btn">Сделать заказ</button>
+            </div>
           </form>
         </div>
       </div>
@@ -194,7 +197,7 @@
           </div>
           <div class="page-footer__copyright copyright">
             <b class="copyright__text">Разработано:</b>
-            <a href="https://htmlacademy.ru/intensive/adaptive" class="btn copyright__link">
+            <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
               HTML Academy
             </a>
           </div>

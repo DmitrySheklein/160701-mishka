@@ -1,0 +1,30 @@
+.products-grid {
+  margin-bottom: 58px;
+}
+
+.product.product--catalog {
+  margin-bottom: 30px;
+}
+
+.product.product--catalog .product__info {
+  padding: 30px;
+  border: 1px solid #ececec;
+}
+
+.product.product--catalog .product__name {
+  margin-top: 0;
+  margin-bottom: 17px;
+  font-family: $default-font;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+}
+.product.product--catalog .product__param {
+  margin-top: 0;
+  padding-bottom: 27px;
+  color: #444444;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 30px;
+  border-bottom: 1px solid #ececec;
+}

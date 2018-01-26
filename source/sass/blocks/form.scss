@@ -1,0 +1,55 @@
+.form {
+  margin-bottom: 55px;
+}
+
+.form .form__group {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  border: none;
+}
+
+.form .form__group-title {
+  margin-bottom: 30px;
+  color: #63d1bb;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.form .form__label {
+  color: #000000;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 18px;
+  cursor: pointer;
+}
+
+.form .form__input {
+  border: none;
+  border-bottom: 2px solid #000;
+  margin-bottom: 25px;
+  &--text {
+    display: block;
+    width: 100%;
+    padding: 20px 0;
+  }
+}
+
+.form .form__textarea {
+  resize: none;
+  width: 100%;
+  padding: 17px;
+  border: 2px solid #000;
+}
+
+.form .form__warning {
+  display: block;
+  margin-bottom: 30px;
+  color: #444444;
+  font-family: $default-font;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+}

@@ -1,3 +1,27 @@
-body {
-  // background: pink;
-}
+@import 'variables.scss';
+@import 'mixins.scss';
+@import 'fonts.scss';
+
+@import 'blocks/main.scss';
+
+@import 'blocks/btn.scss';
+@import 'blocks/main-nav.scss';
+@import 'blocks/main-slide.scss';
+@import 'blocks/recomended-product.scss';
+@import 'blocks/features.scss';
+@import 'blocks/price-box.scss';
+@import 'blocks/category.scss';
+@import 'blocks/about.scss';
+@import 'blocks/social.scss';
+@import 'blocks/review.scss';
+@import 'blocks/contacts.scss';
+@import 'blocks/product.scss';
+@import 'blocks/product-promo.scss';
+@import 'blocks/modal-order.scss';
+@import 'blocks/form.scss';
+@import 'blocks/main-contacts.scss';
+@import 'blocks/page-header.scss';
+@import 'blocks/page-footer.scss';
+@import 'blocks/page-section.scss';
+@import 'blocks/page-main.scss';
+

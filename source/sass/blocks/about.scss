@@ -1,0 +1,13 @@
+.about__list {
+  @include listclr;
+}
+.about__item {
+  margin-bottom: 30px;
+}
+.about__descr {
+  color: #000000;
+  font-family: $default-font;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+}

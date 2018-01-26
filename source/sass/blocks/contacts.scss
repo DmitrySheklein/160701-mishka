@@ -1,0 +1,31 @@
+.contacts {
+  margin-bottom: 40px;
+}
+.contacts .contacts__item {
+  margin-bottom: 40px;
+}
+
+.contacts .contacts__title {
+  color: #444444;
+  font-family: $default-font;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 30px;
+}
+.contacts .contacts__link {
+  color: #444444;
+  font-family: $default-font;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 30px;
+  &--email {
+    border-bottom: 1px solid #62d1ba;
+  }
+}
+.contacts .contacts__address {
+  color: #444444;
+  font-family: $default-font;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 30px;
+}

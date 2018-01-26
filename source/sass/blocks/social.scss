@@ -1,0 +1,12 @@
+.social {
+  color: #000;
+}
+.social__list {
+  @include listclr;
+}
+.social.page-footer__social {
+  padding-bottom: 25px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #e5e5e5;
+}
+

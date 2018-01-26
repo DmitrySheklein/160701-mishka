@@ -1,0 +1,14 @@
+.price-box {
+  &--main {
+    margin: 29px 0;
+  }
+}
+
+.price-box.price-box--catalog .price{
+  color: #000000;
+  font-family: $default-font;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
