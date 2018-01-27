@@ -1,9 +1,11 @@
 .about__list {
   @include listclr;
 }
+
 .about__item {
   margin-bottom: 30px;
 }
+
 .about__descr {
   color: #000000;
   font-family: $default-font;

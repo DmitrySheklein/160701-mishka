@@ -28,8 +28,9 @@
 
 .form .form__input {
   border: none;
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid #000000;
   margin-bottom: 25px;
+
   &--text {
     display: block;
     width: 100%;
@@ -41,7 +42,7 @@
   resize: none;
   width: 100%;
   padding: 17px;
-  border: 2px solid #000;
+  border: 2px solid #000000;
 }
 
 .form .form__warning {
