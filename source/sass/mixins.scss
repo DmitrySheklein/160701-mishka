@@ -1,0 +1,15 @@
+@mixin tr($time: 0.3s) {
+  transition: $time;
+}
+
+@mixin listclr {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin btnclr {
+  background: none;
+  border: none;
+  font-size: 0;
+}

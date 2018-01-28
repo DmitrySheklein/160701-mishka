@@ -1,0 +1,18 @@
+.main-nav {
+  background: #ffffff;
+}
+
+.main-nav__list {
+  @include listclr;
+}
+
+.main-nav__item {
+  padding: 30px;
+}
+
+.main-nav__link {
+  font-family: $default-font;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+}

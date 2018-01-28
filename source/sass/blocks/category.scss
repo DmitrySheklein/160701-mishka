@@ -1,0 +1,36 @@
+.category {
+  @include listclr;
+}
+
+.category__item {
+  padding: 30px;
+  padding-right: 76px;
+
+  @include tr;
+
+  &--interior {
+    background: #63d1bb;
+
+    &:hover,
+    &:active {
+      background-color: #59d5bc;
+    }
+  }
+
+  &--games {
+    background: #56c3b2;
+
+    &:hover,
+    &:active {
+      background-color: #46c1ae;
+    }
+  }
+}
+
+.category__link {
+  color: #ffffff;
+  font-family: $default-font;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 24px;
+}

@@ -1,0 +1,7 @@
+.social {
+  color: #000000;
+}
+
+.social__list {
+  @include listclr;
+}

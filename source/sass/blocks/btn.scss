@@ -1,0 +1,37 @@
+.btn {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 14px 20px 14px;
+  color: #444444;
+  font-family: $default-font;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  border: 2px solid #444444;
+  background-color: #ffffff;
+  cursor: pointer;
+
+  @include tr;
+
+  &:hover {
+    color: #ffffff;
+    background: #444444;
+  }
+
+  &:active {
+    color: rgba(#ffffff, 0.3);
+    background: #7c7c7c;
+  }
+
+  &--green {
+    color: #ffffff;
+    border-color: #63d1bb;
+    background-color: #63d1bb;
+
+    &:hover {
+      background-color: #63d1bb;
+      border-color: #000000;
+    }
+  }
+}

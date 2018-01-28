@@ -1,0 +1,44 @@
+.review {
+  padding-bottom: 45px;
+}
+
+.review__title {
+  margin-bottom: 38px;
+}
+
+.review__wrapper {
+  @include listclr;
+}
+
+.review__descr {
+  margin: 0;
+  margin-bottom: 40px;
+  color: #444444;
+  font-family: $default-font;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.review__author {
+  margin-bottom: 36px;
+}
+
+.review__author-name {
+  display: block;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 15px;
+}
+
+.review__author-link {
+  font-size: 17px;
+  color: #444444;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.review__btns {
+  margin-bottom: 38px;
+}

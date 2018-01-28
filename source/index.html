@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
@@ -14,10 +15,10 @@
           <div class="main-nav__wrapper">
             <ul class="main-nav__list">
               <li class="main-nav__item">
-                <a href="#" class="main-nav__link">Каталог товаров</a>
+                <a href="/catalog.html" class="main-nav__link">Каталог товаров</a>
               </li>
               <li class="main-nav__item">
-                <a href="#" class="main-nav__link">Вязание на заказ</a>
+                <a href="/form.html" class="main-nav__link">Вязание на заказ</a>
               </li>
               <li class="main-nav__item">
                 <form class="search main-nav__search" method="get" action="https://echo.htmlacademy.ru">
@@ -93,21 +94,21 @@
                     <span class="price price--now">990 руб.</span>
                 </div>
                 <button type="button" class="btn btn--order">Заказать</button>
-                <div class="modal modal--order">
-                  <form action="https://echo.htmlacademy.ru" class="recomended-product__form">
-                    <h3 class="modal__title">Добавить в корзину</h3>
-                    <fieldset class="recomended-product__mod">
-                      <legend class="recomended-product__mod-name">Выберите размер:</legend>
-                      <div class="recomended-product__mod-items">
-                        <input type="radio" name="size" id="S" value="S">
-                        <label class="recomended-product__mod-label" for="S">S</label>
-                        <input type="radio" name="size" id="M" value="M">
-                        <label class="recomended-product__mod-label" for="M">M</label>
-                        <input type="radio" name="size" id="L" value="L">
-                        <label class="recomended-product__mod-label" for="L">L</label>
+                <div class="modal-order">
+                  <form action="https://echo.htmlacademy.ru" class="modal-order__form">
+                    <h3 class="modal-order__title">Добавить в корзину</h3>
+                    <fieldset class="modal-order__mod">
+                      <legend class="modal-order__mod-name">Выберите размер:</legend>
+                      <div class="modal-order__mod-items">
+                        <input class="modal-order__mod-input" type="radio" name="size" id="S" value="S">
+                        <label class="modal-order__mod-label" for="S">S</label>
+                        <input class="modal-order__mod-input" type="radio" name="size" id="M" value="M">
+                        <label class="modal-order__mod-label" for="M">M</label>
+                        <input class="modal-order__mod-input" type="radio" name="size" id="L" value="L">
+                        <label class="modal-order__mod-label" for="L">L</label>
                       </div>
                     </fieldset>
-                    <button type="submit" class="btn btn--green recomended-product__add-button">Добавить</button>
+                    <button type="submit" class="btn btn--green modal-order__add-button">Добавить</button>
                   </form>
                 </div>
             </div>
@@ -195,7 +196,7 @@
           </div>
           <div class="page-footer__copyright copyright">
             <b class="copyright__text">Разработано:</b>
-            <a href="https://htmlacademy.ru/intensive/adaptive" class="btn copyright__link">
+            <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
               HTML Academy
             </a>
           </div>
