@@ -1,16 +1,16 @@
-.features.recomended-product__features {
+.features {
   width: 100%;
   margin-bottom: 28px;
 }
 
-.features.recomended-product__features .features__item {
+.features__item {
   display: block;
   border-bottom: 1px solid #ececec;
   padding: 10px 0;
 }
 
-.features.recomended-product__features .features__name,
-.features.recomended-product__features .features__data {
+.features__name,
+.features__data {
   color: #444444;
   font-family: $default-font;
   font-size: 15px;
