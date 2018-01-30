@@ -1,12 +1,22 @@
-.review {
+.review__wrapper {
+  position: relative;
+  padding-top: 30px;
   padding-bottom: 45px;
+
+  @include min-width ($tablet-width) {
+    padding-top: 85px;
+  }
 }
 
 .review__title {
   margin-bottom: 38px;
 }
 
-.review__wrapper {
+.review__list-wrapper {
+  position: relative;
+}
+
+.review__list {
   @include listclr;
 }
 
@@ -22,6 +32,10 @@
 
 .review__author {
   margin-bottom: 36px;
+
+  @include min-width ($tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .review__author-name {
@@ -41,4 +55,20 @@
 
 .review__btns {
   margin-bottom: 38px;
+
+  @include min-width ($tablet-width) {
+    margin-bottom: 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+}
+
+.review__btn-send {
+  @include min-width ($tablet-width) {
+    position: absolute;
+    top: 80px;
+    right: 0;
+  }
 }

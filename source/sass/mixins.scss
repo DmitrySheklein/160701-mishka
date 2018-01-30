@@ -13,3 +13,28 @@
   border: none;
   font-size: 0;
 }
+
+@mixin container {
+  min-width: 260px;
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 668px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1050px;
+  }
+}
+
+// Media
+@mixin min-width($size) {
+    @media (min-width: $size) {
+        @content
+    }
+}

@@ -1,9 +1,25 @@
+.about {
+  padding-bottom: 30px;
+}
 .about__list {
   @include listclr;
+
+  @include min-width($tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .about__item {
   margin-bottom: 30px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @include min-width($tablet-width) {
+    width: 50%;
+  }
 }
 
 .about__descr {
@@ -12,4 +28,13 @@
   font-size: 17px;
   font-weight: 700;
   line-height: 20px;
+
+  @include min-width($tablet-width) {
+   font-size: 20px;
+   line-height: 22px;
+  }
+
+}
+.about__text-devider {
+  display: block;
 }

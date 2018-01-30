@@ -1,13 +1,48 @@
 .main-nav {
-  background: #ffffff;
+  @include min-width ($tablet-width) {
+    order: 1;
+
+    position: absolute;
+    top: 101%;
+  }
+  @include min-width ($desktop-width) {
+    order: -1;
+    position: static;
+  }
+
+
+}
+
+.main-nav__wrapper {
+  height: 100%;
 }
 
 .main-nav__list {
   @include listclr;
+  height: 100%;
 }
 
 .main-nav__item {
   padding: 30px;
+  text-align: center;
+
+  @include min-width ($tablet-width) {
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+    padding: 25px 0;
+    padding-right: 18px;
+  }
+
+   @include min-width ($desktop-width) {
+     padding: 30px;
+
+     &:first-child {
+       padding-left: 0;
+       border-right: 1px solid #ececec;
+     }
+   }
+
 }
 
 .main-nav__link {
@@ -15,4 +50,13 @@
   font-size: 17px;
   font-weight: 700;
   line-height: 24px;
+
+  @include min-width ($tablet-width) {
+    font-size: 15px;
+  }
+
+  @include min-width ($desktop-width) {
+    font-size: 17px;
+  }
+
 }

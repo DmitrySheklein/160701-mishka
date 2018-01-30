@@ -1,0 +1,45 @@
+.search {
+  position: relative;
+}
+
+.search__button {
+  @include btnclr;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background: #cacaca;
+  cursor: pointer;
+
+  @include min-width ($tablet-width) {
+    position: static;
+  }
+
+}
+.search__input-wrap {
+  position: relative;
+
+  @include min-width ($tablet-width) {
+    display: none;
+  }
+}
+
+
+.search__input {
+  padding: 0;
+  border: 0;
+  display: block;
+  margin: auto;
+}
+
+.search__label {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 100%;
+  text-align: center;
+  transform: translateX(-50%)
+}

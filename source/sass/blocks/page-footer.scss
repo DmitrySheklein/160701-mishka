@@ -3,8 +3,32 @@
   background: #f1f1f1;
 }
 
+.page-footer__wrapper {
+  @include container;
+
+  @include min-width ($tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.page-footer__logo {
+  display: none;
+
+  @include min-width ($tablet-width) {
+    display: block;
+  }
+}
+
 .page-footer__social {
   padding-bottom: 25px;
   margin-bottom: 20px;
   border-bottom: 1px solid #e5e5e5;
+
+  @include min-width ($tablet-width) {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border: none;
+  }
 }

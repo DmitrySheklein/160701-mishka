@@ -1,11 +1,88 @@
 .main-contacts {
   padding-bottom: 40px;
+  @include min-width ($desktop-width) {
+    @include container;
+    padding-top: 80px;
+    margin: 0 auto;
+  }
 }
+
+.main-contacts__wrapper {
+  position: relative;
+
+  @include min-width ($desktop-width) {
+    padding-left: 175px;
+  }
+}
+
 
 .main-contacts__title {
   font-size: 18px;
+  padding: 0 40px;
+  padding-top: 44px;
+  @include min-width ($tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+    margin-bottom: 65px;
+  }
+  @include min-width ($desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+    max-width: 350px;
+  }
+}
+
+.main-contacts__contacts {
+  padding: 0 40px;
+  @include min-width ($tablet-width) {
+    display: flex;
+  }
+}
+
+@include min-width ($tablet-width) {
+  .main-contacts__title,
+  .main-contacts__contacts {
+    width: 668px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@include min-width ($desktop-width) {
+  .main-contacts__title,
+  .main-contacts__contacts {
+    margin-left: 0;
+    flex-direction: column;
+    max-width: 350px;
+  }
 }
 
 .main-contacts__map {
   margin-bottom: 40px;
+
+  @include min-width ($desktop-width) {
+    max-width: 525px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+.main-contacts__feedback {
+  padding: 0 40px;
+}
+
+.main-contacts__btn {
+  width: 100%;
+  @include min-width ($tablet-width) {
+    width: 230px;
+    display: block;
+    margin: auto;
+  }
+
+  @include min-width ($desktop-width) {
+    margin: 0;
+  }
 }

@@ -1,5 +1,13 @@
 .price-box {
   &--main {
     margin: 29px 0;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+
+    @include min-width ($tablet-width) {
+      width: 50%;
+    }
   }
 }
