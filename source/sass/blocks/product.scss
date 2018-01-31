@@ -4,9 +4,24 @@
   }
 }
 
+.product__form {
+  @include min-width ($tablet-width) {
+    display: flex;
+  }
+}
+
+.product__img,
+.product__info {
+  @include min-width ($tablet-width) {
+    width: 50%;
+  }
+}
+
 .product__info {
   padding: 30px;
   border: 1px solid #ececec;
+  display: flex;
+  flex-direction: column;
 }
 
 .product__name {
@@ -20,10 +35,19 @@
 
 .product__param {
   margin-top: 0;
-  padding-bottom: 27px;
   color: #444444;
   font-size: 13px;
   font-weight: 400;
   line-height: 30px;
-  border-bottom: 1px solid #ececec;
+}
+
+.product__action {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 27px;
+  border-top: 1px solid #ececec;
+
+  @include min-width ($tablet-width) {
+    margin-top: auto;
+  }
 }

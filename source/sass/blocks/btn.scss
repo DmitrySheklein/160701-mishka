@@ -35,4 +35,11 @@
       border-color: #000000;
     }
   }
+
+  &--add-cart {
+    @include btnclr;
+    width: 21px;
+    height: 18px;
+    background: #cacaca;
+  }
 }

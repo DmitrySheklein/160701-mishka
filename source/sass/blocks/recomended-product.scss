@@ -12,7 +12,7 @@
   }
 }
 
-.recomended-product__info-head {
+.recomended-product__info-header {
   position: relative;
   width: 100%;
   padding-top: 34px;
@@ -24,11 +24,8 @@
   }
 }
 
-.recomended-product__wrapper {
+.recomended-product__body {
   width: 100%;
-}
-
-.recomended-product__wrapper-inner {
   position: relative;
 }
 
@@ -110,6 +107,21 @@
   line-height: 24px;
 }
 
+
+.recomended__price {
+  margin: 29px 0;
+
+  @include min-width ($tablet-width) {
+    width: 50%;
+  }
+}
+
+.recomended__btns {
+  @include min-width ($desktop-width) {
+    max-width: 50%;
+  }
+}
+
 .recomended__btn-order {
   max-width: 260px;
   width: 100%;
@@ -117,6 +129,9 @@
   margin: auto;
   @include min-width ($tablet-width) {
     max-width: 292px;
-    margin: 0;
+    margin-left: 0;
+  }
+  @include min-width ($tablet-width) {
+    margin-left: auto;
   }
 }
