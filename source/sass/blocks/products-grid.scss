@@ -1,3 +1,21 @@
 .products-grid {
-  margin-bottom: 58px;
+  margin-bottom: 30px;
+
+  @include min-width ($desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.products-grid__item {
+  margin-bottom: 30px;
+
+  @include min-width ($desktop-width) {
+    max-width: 315px;
+    margin-right: 50px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }

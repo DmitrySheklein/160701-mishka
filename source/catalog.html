@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -55,7 +56,7 @@
       <h1 class="page-main__title">Каталог товаров</h1>
       <div class="page-main__container">
         <div class="products-grid">
-          <article class="product product--catalog">
+          <article class="product products-grid__item product--catalog">
             <form action="https://echo.htmlacademy.ru" method="get" class="product__form">
               <div class="product__img">
                 <a href="#">
@@ -95,7 +96,7 @@
               </div>
             </form>
           </article>
-          <article class="product product--catalog">
+          <article class="product products-grid__item product--catalog">
             <form action="https://echo.htmlacademy.ru" method="get" class="product__form">
               <div class="product__img">
                 <a href="#">
@@ -135,7 +136,7 @@
               </div>
             </form>
           </article>
-          <article class="product product--catalog">
+          <article class="product products-grid__item product--catalog">
             <form action="https://echo.htmlacademy.ru" method="get" class="product__form">
               <div class="product__img">
                 <a href="#">
@@ -175,22 +176,22 @@
               </div>
             </form>
           </article>
-          <div class="product-promo">
-            <form action="https://echo.htmlacademy.ru" method="get" class="product-promo__form">
-              <h2 class="product-promo__name product-promo__name--icon">Процесс производства</h2>
-              <div class="product-promo__img">
-                <a class="product-promo__link" href="#">
-                  <img class="product-promo__main-pic" src="http://placehold.it/260x150" alt="">
-                </a>
-              </div>
-              <div class="product-promo__info">
-                <p class="product-promo__descr">
-                    По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
-                </p>
-                <button type="submit" class="btn product-promo__btn">Сделать заказ</button>
-              </div>
-            </form>
-          </div>
+        </div>
+        <div class="product-promo">
+          <form action="https://echo.htmlacademy.ru" method="get" class="product-promo__form">
+            <h2 class="product-promo__name product-promo__name--icon">Процесс производства</h2>
+            <div class="product-promo__img">
+              <a class="product-promo__link" href="#">
+                <img class="product-promo__main-pic" src="http://placehold.it/260x150" alt="">
+              </a>
+            </div>
+            <div class="product-promo__info">
+              <p class="product-promo__descr">
+                  По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
+              </p>
+              <button type="submit" class="btn product-promo__btn">Сделать заказ</button>
+            </div>
+          </form>
         </div>
       </div>
     </main>

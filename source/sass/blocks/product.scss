@@ -1,12 +1,13 @@
 .product {
-  &--catalog {
-    margin-bottom: 30px;
-  }
+  position: relative;
 }
 
 .product__form {
   @include min-width ($tablet-width) {
     display: flex;
+  }
+  @include min-width ($desktop-width) {
+    flex-direction: column;
   }
 }
 
@@ -14,6 +15,9 @@
 .product__info {
   @include min-width ($tablet-width) {
     width: 50%;
+  }
+  @include min-width ($tablet-width) {
+    width: 100%;
   }
 }
 
@@ -31,6 +35,9 @@
   font-size: 17px;
   font-weight: 700;
   line-height: 24px;
+  height: 50px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .product__param {

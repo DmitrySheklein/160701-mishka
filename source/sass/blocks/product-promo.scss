@@ -9,7 +9,7 @@
   }
   @include min-width ($desktop-width) {
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
   }
 }
 
