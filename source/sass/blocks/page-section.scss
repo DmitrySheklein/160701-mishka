@@ -2,6 +2,10 @@
   margin: 0;
 }
 
+.page-section__wrapper {
+  @include container;
+}
+
 .page-section__title {
   margin-top: 0;
   margin-bottom: 30px;
@@ -9,4 +13,9 @@
   font-size: 25px;
   font-weight: 700;
   line-height: 30px;
+
+  @include min-width ($tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
 }

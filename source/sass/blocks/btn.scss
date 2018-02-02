@@ -3,6 +3,7 @@
   vertical-align: middle;
   padding: 14px 20px 14px;
   color: #444444;
+  text-align: center;
   font-family: $default-font;
   font-size: 17px;
   font-weight: 700;
@@ -33,5 +34,12 @@
       background-color: #63d1bb;
       border-color: #000000;
     }
+  }
+
+  &--add-cart {
+    @include btnclr;
+    width: 21px;
+    height: 18px;
+    background: #cacaca;
   }
 }

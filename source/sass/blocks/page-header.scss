@@ -1,3 +1,62 @@
 .page-header {
   background: #ffffff;
+  box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
+
+  @include min-width ($tablet-width) {
+    border-bottom: 1px solid #e7e7e7;
+  }
+}
+
+.page-header__wrapper {
+  position: relative;
+  padding: 22px 0;
+
+  @include min-width ($tablet-width) {
+    @include container;
+
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.page-header__logo {
+  display: block;
+  width: 86px;
+  height: 35px;
+  margin: auto;
+
+  @include min-width ($tablet-width) {
+    margin-left: 0;
+  }
+
+  @include min-width ($desktop-width) {
+    margin-left: auto;
+  }
+}
+
+.page-header__button {
+  @include btnclr;
+  display: block;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  position: absolute;
+  top: 24px;
+  right: 30px;
+
+  @include min-width ($tablet-width) {
+    display: none;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: #000000;
+    box-shadow: 0 6px #000000, 0 -6px #000000;
+  }
 }

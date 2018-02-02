@@ -1,9 +1,21 @@
 .product-promo {
   border: 1px solid #ececec;
-  padding-top: 30px;
+}
+
+.product-promo__form {
+  @include min-width ($tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @include min-width ($desktop-width) {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
 }
 
 .product-promo__name {
+  padding-top: 30px;
   margin-top: 0;
   margin-bottom: 25px;
   font-size: 17px;
@@ -15,8 +27,19 @@
   }
 }
 
-.product-promo__img img {
-  width: 100%;
+.product-promo__img {
+  @include min-width ($tablet-width) {
+    order: -1;
+  }
+
+  @include min-width ($desktop-width) {
+    width: 50%;
+    order: -1;
+  }
+}
+
+.product-promo__main-pic {
+  max-width: 100%;
 }
 
 .product-promo__info {
@@ -30,4 +53,8 @@
   font-size: 13px;
   font-weight: 400;
   line-height: 24px;
+}
+
+.product-promo__btn {
+  width: 100%;
 }

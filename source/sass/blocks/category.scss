@@ -1,12 +1,19 @@
 .category {
   @include listclr;
+
+  @include min-width ($tablet-width) {
+    @include container;
+    display: flex;
+  }
 }
 
 .category__item {
-  padding: 30px;
-  padding-right: 76px;
-
   @include tr;
+
+  @include min-width ($tablet-width) {
+    width: 50%;
+    flex-grow: 1;
+  }
 
   &--interior {
     background: #63d1bb;
@@ -28,9 +35,20 @@
 }
 
 .category__link {
+  display: block;
+  padding: 30px;
+  padding-right: 76px;
   color: #ffffff;
   font-family: $default-font;
   font-size: 19px;
   font-weight: 700;
   line-height: 24px;
+}
+
+.category__name-devider {
+  display: none;
+
+  @include min-width ($tablet-width) {
+    display: block;
+  }
 }
