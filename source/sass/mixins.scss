@@ -34,7 +34,7 @@
 
 // Media
 @mixin min-width($size) {
-    @media (min-width: $size) {
-        @content
-    }
+  @media (min-width: $size) {
+    @content;
+  }
 }

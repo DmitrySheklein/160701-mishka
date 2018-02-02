@@ -1,10 +1,12 @@
 .recomended-product {
   margin-bottom: 36px;
+
   @include min-width ($tablet-width) {
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 54px;
   }
+
   @include min-width ($desktop-width) {
     padding-bottom: 73px;
     padding-left: 175px;
@@ -17,6 +19,7 @@
   width: 100%;
   padding-top: 34px;
   margin-bottom: 30px;
+
   @include min-width ($tablet-width) {
     display: flex;
     align-items: center;
@@ -38,12 +41,14 @@
 
 .recomended-product__img {
   text-align: center;
+
   @include min-width ($tablet-width) {
     width: 50%;
     position: absolute;
     top: 0;
     right: 0;
   }
+
   @include min-width ($desktop-width) {
     top: -150px;
     z-index: -1;
@@ -61,10 +66,12 @@
   font-size: 25px;
   font-weight: 700;
   line-height: 30px;
+
   @include min-width ($tablet-width) {
     font-size: 43px;
     line-height: 50px;
   }
+
   @include min-width ($tablet-width) {
     font-size: 53px;
     line-height: 57px;
@@ -89,6 +96,7 @@
     max-width: 75px;
     margin-right: 28px;
   }
+
   @include min-width ($desktop-width) {
     position: absolute;
     top: 50%;
@@ -127,10 +135,12 @@
   width: 100%;
   display: block;
   margin: auto;
+
   @include min-width ($tablet-width) {
     max-width: 292px;
     margin-left: 0;
   }
+
   @include min-width ($tablet-width) {
     margin-left: auto;
   }

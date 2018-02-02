@@ -1,12 +1,12 @@
 .page-header {
   background: #ffffff;
-  box-shadow: 0 1px 0 #ececec,  inset 0 1px 0 #ececec;
+  box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
 
   @include min-width ($tablet-width) {
     border-bottom: 1px solid #e7e7e7;
   }
-
 }
+
 .page-header__wrapper {
   position: relative;
   padding: 22px 0;
@@ -19,7 +19,6 @@
     flex-wrap: wrap;
     justify-content: space-between;
   }
-
 }
 
 .page-header__logo {
@@ -35,8 +34,6 @@
   @include min-width ($desktop-width) {
     margin-left: auto;
   }
-
-
 }
 
 .page-header__button {
@@ -55,7 +52,7 @@
   }
 
   &::before {
-    content: '';
+    content: "";
     display: block;
     width: 20px;
     height: 2px;

@@ -14,11 +14,11 @@
   @include min-width ($tablet-width) {
     margin-bottom: 350px;
   }
-
 }
 
 .main-slide__feature {
   display: none;
+
   @include min-width ($tablet-width) {
     display: flex;
     justify-content: space-between;
@@ -29,12 +29,13 @@
 .main-slide__features-list {
   @include listclr;
   display: none;
+
   @include min-width ($desktop-width) {
     display: block;
   }
 }
 
-.main-slide__features-list  a {
+.main-slide__features-list a {
   font-size: 15px;
   font-weight: 700;
   line-height: 24px;
@@ -69,10 +70,12 @@
   font-weight: 700;
   line-height: 30px;
   text-align: center;
+
   @include min-width ($tablet-width) {
     font-size: 43px;
     line-height: 50px;
   }
+
   @include min-width ($desktop-width) {
     font-size: 53px;
     line-height: 57px;

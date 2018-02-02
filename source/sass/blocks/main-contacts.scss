@@ -1,5 +1,6 @@
 .main-contacts {
   padding-bottom: 40px;
+
   @include min-width ($desktop-width) {
     @include container;
     padding-top: 80px;
@@ -15,16 +16,17 @@
   }
 }
 
-
 .main-contacts__title {
   font-size: 18px;
   padding: 0 40px;
   padding-top: 44px;
+
   @include min-width ($tablet-width) {
     font-size: 43px;
     line-height: 50px;
     margin-bottom: 65px;
   }
+
   @include min-width ($desktop-width) {
     font-size: 53px;
     line-height: 57px;
@@ -34,6 +36,7 @@
 
 .main-contacts__contacts {
   padding: 0 40px;
+
   @include min-width ($tablet-width) {
     display: flex;
   }
@@ -76,6 +79,7 @@
 
 .main-contacts__btn {
   width: 100%;
+
   @include min-width ($tablet-width) {
     width: 230px;
     display: block;

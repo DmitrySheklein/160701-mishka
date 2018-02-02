@@ -1,16 +1,14 @@
 .main-nav {
   @include min-width ($tablet-width) {
     order: 1;
-
     position: absolute;
     top: 101%;
   }
+
   @include min-width ($desktop-width) {
     order: -1;
     position: static;
   }
-
-
 }
 
 .main-nav__wrapper {
@@ -34,15 +32,14 @@
     padding-right: 18px;
   }
 
-   @include min-width ($desktop-width) {
-     padding: 30px;
+  @include min-width ($desktop-width) {
+    padding: 30px;
 
-     &:first-child {
-       padding-left: 0;
-       border-right: 1px solid #ececec;
-     }
-   }
-
+    &:first-child {
+      padding-left: 0;
+      border-right: 1px solid #ececec;
+    }
+  }
 }
 
 .main-nav__link {
@@ -58,5 +55,4 @@
   @include min-width ($desktop-width) {
     font-size: 17px;
   }
-
 }

@@ -6,6 +6,7 @@
   @include min-width ($tablet-width) {
     display: flex;
   }
+
   @include min-width ($desktop-width) {
     flex-direction: column;
   }
@@ -16,6 +17,7 @@
   @include min-width ($tablet-width) {
     width: 50%;
   }
+
   @include min-width ($tablet-width) {
     width: 100%;
   }

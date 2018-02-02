@@ -13,8 +13,8 @@
   @include min-width ($tablet-width) {
     position: static;
   }
-
 }
+
 .search__input-wrap {
   position: relative;
 
@@ -41,5 +41,5 @@
   left: 50%;
   width: 100%;
   text-align: center;
-  transform: translateX(-50%)
+  transform: translateX(-50%);
 }

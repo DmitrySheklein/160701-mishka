@@ -1,6 +1,7 @@
 .about {
   padding-bottom: 30px;
 }
+
 .about__list {
   @include listclr;
 
@@ -30,11 +31,11 @@
   line-height: 20px;
 
   @include min-width($tablet-width) {
-   font-size: 20px;
-   line-height: 22px;
+    font-size: 20px;
+    line-height: 22px;
   }
-
 }
+
 .about__text-devider {
   display: block;
 }

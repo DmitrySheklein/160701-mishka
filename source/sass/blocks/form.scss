@@ -14,7 +14,8 @@
   &--phone {
     padding-bottom: 0;
   }
-  &--email{
+
+  &--email {
     padding-top: 0;
   }
 }
@@ -22,7 +23,7 @@
 .form__group__inner {
   @include container;
 
-  @include min-width ($tablet-width)  {
+  @include min-width ($tablet-width) {
     display: flex;
   }
 }
@@ -45,6 +46,7 @@
     @include min-width ($tablet-width) {
       width: 50%;
     }
+
     @include min-width ($desktop-width) {
       width: 33%;
     }
