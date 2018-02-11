@@ -47,11 +47,11 @@
     position: absolute;
     top: 0;
     right: 0;
+    z-index: -1;
   }
 
   @include min-width ($desktop-width) {
     top: -150px;
-    z-index: -1;
   }
 }
 
@@ -116,7 +116,7 @@
 }
 
 
-.recomended__price {
+.recomended-product__price {
   margin: 29px 0;
 
   @include min-width ($tablet-width) {
@@ -124,13 +124,13 @@
   }
 }
 
-.recomended__btns {
+.recomended-product__btns {
   @include min-width ($desktop-width) {
     max-width: 50%;
   }
 }
 
-.recomended__btn-order {
+.recomended-product__btn-order {
   max-width: 260px;
   width: 100%;
   display: block;
@@ -141,7 +141,7 @@
     margin-left: 0;
   }
 
-  @include min-width ($tablet-width) {
+  @include min-width ($desktop-width) {
     margin-left: auto;
   }
 }

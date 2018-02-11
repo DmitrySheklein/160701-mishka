@@ -11,7 +11,7 @@
       <div class="page-header__wrapper">
         <div class="page-header__logo">
           <a href="#" class="page-header__logo-link">
-            <img src="http://placehold.it/86x35" alt="" class="page-header__logo-img">
+            <img src="img/logo-mobile.svg" alt="" class="page-header__logo-img">
           </a>
         </div>
         <button class="page-header__button" type="button">
@@ -64,11 +64,11 @@
             <div class="form__group__inner">
               <legend class="form__group-title">Тип</legend>
               <div class="form__body">
-              <div class="form__input-wrap">
-                <input class="form__input form__input--radio" type="radio" id="radio1" value="Аксессуар для интерьера" name="type">
+              <div class="form__input-wrap form__input-wrap--radio">
+                <input class="form__input form__input--radio" type="radio" id="radio1" value="Аксессуар для интерьера" name="type" checked>
                 <label class="form__label" for="radio1">Аксессуар для интерьера</label>
               </div>
-              <div class="form__input-wrap">
+              <div class="form__input-wrap form__input-wrap--radio">
                 <input class="form__input form__input--radio" type="radio" id="radio2" value="Детская игрушка" name="type">
                 <label class="form__label" for="radio2">Детская игрушка</label>
               </div>
@@ -80,7 +80,7 @@
               <legend class="form__group-title">Цвет</legend>
               <div class="form__body form__body--color">
                 <div class="form__input-wrap form__input-wrap--check">
-                  <input class="form__input form__input--check" type="checkbox" id="check1" name="color" value="Белый">
+                  <input class="form__input form__input--check" type="checkbox" id="check1" name="color" value="Белый" checked>
                   <label for="check1" class="form__label">Белый</label>
                 </div>
                 <div class="form__input-wrap form__input-wrap--check">
@@ -110,20 +110,17 @@
             <div class="form__group__inner">
               <legend class="form__group-title">ФИО</legend>
               <div class="form__body">
-                <div class="form__input-wrap">
-                  <label class="form__label">Имя:
+                <div class="form__input-wrap form__input-wrap--text">
+                  <label class="form__label form__label--text">Имя:</label>
                   <input class="form__input form__input--text" type="text" placeholder="Введите ваше имя*" required>
-                  </label>
                 </div>
-                <div class="form__input-wrap">
-                  <label class="form__label">Фамилия:
+                <div class="form__input-wrap form__input-wrap--text">
+                  <label class="form__label form__label--text">Фамилия:</label>
                   <input class="form__input form__input--text" type="text" placeholder="Укажите фамилию*" required>
-                  </label>
                 </div>
-                <div class="form__input-wrap">
-                  <label class="form__label">Отчество:
+                <div class="form__input-wrap form__input-wrap--text">
+                  <label class="form__label form__label--text">Отчество:</label>
                   <input class="form__input form__input--text" type="text" placeholder="Отчество, если желаете">
-                  </label>
                 </div>
               </div>
             </div>
@@ -132,7 +129,7 @@
             <div class="form__group__inner">
               <legend class="form__group-title">Тел</legend>
               <div class="form__body">
-                <div class="form__input-wrap">
+                <div class="form__input-wrap form__input-wrap--text">
                   <input class="form__input form__input--text form__input--phone" type="tel" placeholder="+7 ХХХ ХХ ХХ*" required>
                 </div>
               </div>
@@ -142,7 +139,7 @@
             <div class="form__group__inner">
               <legend class="form__group-title">E-mail</legend>
               <div class="form__body">
-                <div class="form__input-wrap">
+                <div class="form__input-wrap form__input-wrap--text">
                   <input class="form__input form__input--text form__input--email" type="email" placeholder="Ваш Email*" required>
                 </div>
               </div>
@@ -158,9 +155,11 @@
               </div>
             </div>
           </fieldset>
-          <div class="form__action">
-            <strong class="form__warning">*Поля обязательны для заполнения</strong>
-            <button type="submit" class="btn">Отправить заказ</button>
+          <div class="form__group__inner">
+            <div class="form__action">
+              <strong class="form__warning">*Поля обязательны для заполнения</strong>
+              <button type="submit" class="btn">Отправить заказ</button>
+            </div>
           </div>
         </form>
 
@@ -169,7 +168,7 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <a href="#" class="page-footer__logo">
-          <img src="http://placehold.it/86x35" alt="" class="page-header__logo-img">
+          <img src="img/logo-mobile.svg" alt="" class="page-header__logo-img">
         </a>
         <div class="page-footer__social social">
           <ul class="social__list">

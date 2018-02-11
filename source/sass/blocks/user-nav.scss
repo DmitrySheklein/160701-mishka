@@ -1,3 +1,17 @@
+.user-nav {
+  background: #ffffff;
+
+  @include max-width ($tablet-width) {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: calc(100% + 168px);
+
+    &--active {
+      display: block;
+    }
+  }
+}
 .user-nav__list {
   @include listclr;
 }
@@ -26,6 +40,15 @@
   font-weight: 700;
   line-height: 24px;
   text-align: center;
+  @include tr;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @include min-width ($desktop-width) {
     padding-left: 85px;

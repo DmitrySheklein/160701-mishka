@@ -2,7 +2,7 @@
   position: relative;
 }
 
-.product__form {
+.product__body {
   @include min-width ($tablet-width) {
     display: flex;
   }
@@ -23,11 +23,20 @@
   }
 }
 
+.product:hover .product__info {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product:active .product__info {
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
 .product__info {
   padding: 30px;
   border: 1px solid #ececec;
   display: flex;
   flex-direction: column;
+  @include tr;
 }
 
 .product__name {
@@ -40,6 +49,14 @@
   height: 50px;
   overflow: hidden;
   text-overflow: ellipsis;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .product__param {

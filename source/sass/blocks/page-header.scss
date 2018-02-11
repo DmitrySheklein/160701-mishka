@@ -59,4 +59,28 @@
     background: #000000;
     box-shadow: 0 6px #000000, 0 -6px #000000;
   }
+
+  &--closed {
+
+
+    &::before,
+    &::after {
+    content: '';
+      display: block;
+      width: 30px;
+      top: 50%;
+      left: 0;
+      position: absolute;
+      height: 2px;
+      background: #000;
+      box-shadow: none;
+    }
+
+    &::before {
+      transform: rotate(45deg)
+    }
+    &::after {
+      transform: rotate(-45deg)
+    }
+  }
 }
