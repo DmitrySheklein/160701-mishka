@@ -5,9 +5,10 @@
 .search__button {
   @include btnclr;
   position: absolute;
+  z-index: 1;
   width: 18px;
   height: 18px;
-  background: #cacaca;
+  background: url('../img/icon-search.svg');
   cursor: pointer;
 
   @include min-width ($tablet-width) {

@@ -9,6 +9,10 @@
 
   &--grey {
     background: #f1f1f1;
+
+    @include max-width ($tablet-width) {
+      background: none;
+    }
   }
 
   &--phone {
@@ -92,10 +96,36 @@
   line-height: 16px;
   text-transform: uppercase;
 
+  span {
+
+    @include max-width ($tablet-width) {
+      position: relative;
+      display: inline-block;
+      padding: 10px 25px 10px 10px;
+      background-color: #fff;
+      z-index: 1;
+    }
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    display: inline-block;
+    background: #63d1bb;
+    height: 2px;
+  }
+
   @include min-width ($tablet-width) {
     flex-basis: 170px;
     flex-shrink: 0;
     padding-top: 20px;
+
+    &::after {
+      display: none;
+    }
   }
 
 }

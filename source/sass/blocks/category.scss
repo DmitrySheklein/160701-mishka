@@ -8,11 +8,21 @@
 }
 
 .category__item {
+  position: relative;
   @include tr;
 
   @include min-width ($tablet-width) {
     width: 50%;
     flex-grow: 1;
+  }
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-repeat: no-repeat;
   }
 
   &--interior {
@@ -21,6 +31,13 @@
     &:hover,
     &:active {
       background-color: #59d5bc;
+    }
+
+    &::before {
+      width: 40px;
+      height: 62px;
+      background: url('../img/icon-interior.svg');
+      right: 36px;
     }
   }
 
@@ -31,6 +48,14 @@
     &:active {
       background-color: #46c1ae;
     }
+
+    &::before {
+      width: 60px;
+      height: 60px;
+      background: url('../img/icon-toy.svg');
+      right: 29px;
+    }
+
   }
 }
 
@@ -50,10 +75,6 @@
   }
 }
 
-.category__name-devider {
-  display: none;
-
-  @include min-width ($tablet-width) {
-    display: block;
-  }
+.category__name br {
+  display: block;
 }
