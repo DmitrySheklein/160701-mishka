@@ -2,6 +2,12 @@
   padding-bottom: 30px;
 }
 
+.about__wrapper {
+  @include min-width ($desktop-width) {
+    padding-left: 175px;
+  }
+}
+
 .about__list {
   @include listclr;
 
@@ -20,6 +26,63 @@
 
   @include min-width($tablet-width) {
     width: 50%;
+  }
+
+  &:before {
+    content: '';
+    display: block;
+    margin-bottom: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &--icon-flower {
+    &:before {
+      width: 33px;
+      height: 38px;
+      background-image: url('../img/icon-feature-flower.svg');
+    }
+  }
+
+  &--icon-money {
+    &:before {
+      width: 47px;
+      height: 27px;
+      background-image: url('../img/icon-feature-money.svg');
+    }
+  }
+
+  &--icon-heart {
+    &:before {
+      width: 34px;
+      height: 27px;
+      background-image: url('../img/icon-feature-heart.svg');
+
+    }
+  }
+
+  &--icon-ball {
+    &:before {
+      width: 35px;
+      height: 34px;
+      background-image: url('../img/icon-feature-ball.svg');
+    }
+  }
+
+  &--icon-rocket {
+    &:before {
+      width: 55px;
+      height: 23px;
+      background-image: url('../img/icon-feature-rocket.svg');
+    }
+  }
+
+  &--icon-gift {
+    &:before {
+      width: 33px;
+      height: 32px;
+      background-image: url('../img/icon-feature-gift.svg');
+    }
   }
 }
 

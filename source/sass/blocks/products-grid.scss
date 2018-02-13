@@ -12,6 +12,7 @@
 
   @include min-width ($desktop-width) {
     max-width: 315px;
+    width: 100%;
     margin-right: 50px;
 
     &:last-child {

@@ -1,5 +1,5 @@
 .main-nav {
-  @include max-width ($tablet-width) {
+  @include max-width ($mobile-width) {
     display: none;
     position: absolute;
     width: 100%;
@@ -34,7 +34,10 @@
 
 .main-nav__item {
   padding: 30px;
-  text-align: center;
+  padding-left: 76px;
+  text-align: left;
+  box-shadow: 0 1px 0 #ececec,
+  inset 0 1px 0 #ececec;
 
   @include min-width ($tablet-width) {
     display: inline-block;
@@ -42,6 +45,7 @@
     height: 100%;
     padding: 25px 0;
     padding-right: 18px;
+    box-shadow: none;
   }
 
   @include min-width ($desktop-width) {

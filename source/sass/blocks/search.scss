@@ -5,6 +5,8 @@
 .search__button {
   @include btnclr;
   position: absolute;
+  top: 3px;
+  left: 0;
   z-index: 1;
   width: 18px;
   height: 18px;
