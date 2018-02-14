@@ -7,7 +7,6 @@
     display: flex;
     flex-direction: column;
   }
-
   @include min-width ($desktop-width) {
     flex-wrap: wrap;
     flex-direction: column;
@@ -16,26 +15,24 @@
 
 .product-promo__wrapper {
   position: relative;
-
+  overflow: hidden;
   @include min-width ($desktop-width) {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
   }
-
 }
 
 .product-promo__name {
+  position: relative;
   padding-top: 30px;
   margin-top: 0;
   margin-bottom: 25px;
   font-size: 17px;
   font-weight: 700;
   line-height: 24px;
-
   &--icon {
     padding-left: 34px + 32px + 25px;
-
 
     @include min-width ($desktop-width) {
       padding-left: 32px;
@@ -45,21 +42,24 @@
       content: '';
       display: inline-block;
       vertical-align: middle;
+      position: absolute;
+      top: 50%;
+      left: 40px;
       margin-right: 33px;
       width: 32px;
       height: 22px;
       background-image: url('../img/icon-video.svg');
       background-size: contain;
       background-repeat: no-repeat;
-
       @include min-width ($desktop-width) {
+        position: static;
         display: block;
         margin-bottom: 30px;
         margin-right: 0;
       }
     }
-
   }
+
   @include min-width ($desktop-width) {
     font-size: 20px;
   }
@@ -67,14 +67,43 @@
   @include min-width ($desktop-width) {
     width: 35%;
   }
-
 }
 
-.product-promo__img {
+.product-promo__video {
+  position: relative;
+  &::before {
+    content: '';
+    display: block;
+    width: 101px;
+    height: 77px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    // transform: translate(-50%, -50%);
+    margin-left: -55px;
+    margin-top: -33px;
+    background-image: url('../img/icon-play.svg');
+    background-repeat: no-repeat;
+    cursor: pointer;
+    @include tr;
+
+/*     .product-promo__video:hover & {
+      transform: scale(1.2);
+    } */
+  }
+
+  &:hover::before {
+    transform: scale(1.2);
+  }
+
+  &:active::before {
+    transform: scale(0.8);
+    opacity: 0.3;
+  }
+
   @include min-width ($tablet-width) {
     order: -1;
   }
-
   @include min-width ($desktop-width) {
     position: absolute;
     top: 0;
@@ -85,16 +114,14 @@
 }
 
 .product-promo__main-pic {
-  max-width: 100%;
+  width: 100%;
 }
 
 .product-promo__info {
   padding: 34px;
-
-   @include min-width ($desktop-width) {
-     width: 35%;
-   }
-
+  @include min-width ($desktop-width) {
+    width: 35%;
+  }
 }
 
 .product-promo__descr {

@@ -1,4 +1,6 @@
 .page-main {
+  margin-bottom: 58px;
+
   @include min-width ($tablet-width) {
     margin-bottom: 63px;
   }
