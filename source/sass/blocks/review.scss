@@ -32,7 +32,7 @@
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-position: left;
-    padding-top: 80px;
+    padding-top: 87px;
     padding-bottom: 102px;
   }
 }
@@ -66,6 +66,10 @@
   @include min-width ($tablet-width) {
     font-size: 17px;
     margin-bottom: 58px;
+  }
+
+  @include min-width ($desktop-width) {
+    margin-bottom: 39px;
   }
 }
 
@@ -163,5 +167,10 @@
     right: 0;
     min-width: 175px;
     width: auto;
+  }
+
+  @include min-width ($desktop-width) {
+    top: 97px;
+    right: 0;
   }
 }

@@ -51,4 +51,9 @@
   line-height: 30px;
   font-style: normal;
   padding-right: 30px;
+
+  @include min-width ($tablet-width) {
+    font-size: 17px;
+    padding-right: 75px;
+  }
 }

@@ -21,6 +21,10 @@
     margin-bottom: 374px;
     padding-top: 153px;
   }
+
+  @include min-width ($tablet-width) {
+    margin-bottom: 359px;
+  }
 }
 
 .main-slide__title {

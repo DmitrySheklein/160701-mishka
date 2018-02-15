@@ -95,7 +95,6 @@
   @include min-width ($tablet-width) {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 120px;
     position: absolute;
     width: 100%;
     top: 100%;
@@ -130,6 +129,11 @@
   vertical-align: middle;
   margin-right: 30px;
   padding: 25px 0;
+
+  @include min-width ($desktop-width) {
+    padding: 18px 0;
+    margin-right: 58px;
+  }
 }
 
 .page-header__free {

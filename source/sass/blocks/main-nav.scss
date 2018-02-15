@@ -54,9 +54,11 @@
 
   @include min-width ($desktop-width) {
     padding: 30px;
+    margin-right: 0;
 
     &:first-child {
       padding-left: 0;
+      padding-right: 35px;
       border-right: 1px solid #ececec;
     }
   }
