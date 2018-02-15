@@ -18,11 +18,6 @@
       margin-bottom: 50px;
     }
   }
-  &--catalog {
-    @include min-width ($tablet-width) {
-      // margin-bottom: 50px;
-    }
-  }
 }
 
 .page-main__title {
@@ -77,5 +72,4 @@
   @include min-width ($tablet-width) {
     margin-bottom: 45px;
   }
-
 }

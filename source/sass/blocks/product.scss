@@ -16,11 +16,11 @@
 
 .product__img {
   @include min-width ($desktop-width) {
-    min-height: 460px
+    min-height: 460px;
   }
 }
 
-.product__img img{
+.product__img img {
   display: block;
 
   @include min-width ($tablet-width) {
@@ -29,7 +29,7 @@
   }
 
   @include min-width ($desktop-width) {
-    min-height: 460px
+    min-height: 460px;
   }
 }
 

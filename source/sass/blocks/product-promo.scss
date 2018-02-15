@@ -105,7 +105,6 @@
     cursor: pointer;
 
     @include tr;
-
   }
 
   &:hover::before {
@@ -149,6 +148,7 @@
     padding-right: 40px;
     padding-bottom: 45px;
   }
+
   @include min-width ($desktop-width) {
     width: 35%;
     padding-left: 78px;
