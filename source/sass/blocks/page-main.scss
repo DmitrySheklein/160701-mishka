@@ -16,10 +16,14 @@
 
 .page-main__title {
   margin: 0;
-  margin-bottom: 30px;
-  padding: 75px 0;
+  margin-bottom: 25px;
+  padding: 72px 0;
   background: #f1f1f1;
   text-align: center;
+  color: #231f20;
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 30px;
 
   @include min-width ($tablet-width) {
     margin-bottom: 67px;
@@ -32,7 +36,6 @@
 
 .page-main__descr {
   margin: 0;
-  margin-bottom: 30px;
   color: #444444;
   font-size: 13px;
   font-weight: 400;
@@ -46,4 +49,5 @@
 
 .page-main__container {
   @include container;
+  margin-bottom: 14px;
 }
