@@ -20,7 +20,7 @@
 .user-nav__item {
   text-align: left;
   padding: 30px;
-  padding-left: 45px;
+  padding-left: 76px;
   box-shadow: 0 1px 0 #ececec,
   inset 0 1px 0 #ececec;
 
@@ -43,7 +43,7 @@
 .user-nav__cart {
   display: inline-block;
   position: relative;
-  padding-left: 25px;
+  padding-left: 0;
   margin-left: 0px;
   font-family: $default-font;
   font-size: 17px;
@@ -60,12 +60,12 @@
     opacity: 0.3;
   }
 
-  &:after {
+  &::before {
     content: '';
     display: block;
     position: absolute;
     top: 3px;
-    left: 0px;
+    left: -45px;
     width: 21px;
     height: 18px;
     background: url('../img/icon-cart.svg');
@@ -74,13 +74,17 @@
   @include min-width ($tablet-width) {
     margin-left: 30px;
     padding-left: 50px;
+
+    &::before {
+      left: 0;
+    }
   }
 }
 
 .user-nav__search {
   display: inline-block;
   @include min-width ($tablet-width) {
-    padding: 33px;
+    padding: 32px;
     border-left: 1px solid #ececec;
     border-right: 1px solid #ececec;
   }

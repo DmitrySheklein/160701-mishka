@@ -1,5 +1,18 @@
 .about {
   padding-bottom: 30px;
+  padding-top: 32px;
+
+  @include min-width ($tablet-width) {
+    padding-top: 65px;
+    padding-bottom: 28px;
+  }
+}
+
+.about__title {
+  @include min-width ($tablet-width) {
+    margin-bottom: 48px;
+    margin-left: -6px;
+  }
 }
 
 .about__wrapper {
@@ -18,7 +31,7 @@
 }
 
 .about__item {
-  margin-bottom: 30px;
+  margin-bottom: 34px;
 
   &:last-child {
     margin-bottom: 0;
@@ -26,10 +39,12 @@
 
   @include min-width($tablet-width) {
     width: 50%;
+    margin-bottom: 60px;
   }
 
   &:before {
     content: '';
+    position: relative;
     display: block;
     margin-bottom: 20px;
     background-size: contain;
@@ -41,6 +56,11 @@
       width: 33px;
       height: 38px;
       background-image: url('../img/icon-feature-flower.svg');
+      left: 7px;
+    }
+
+    @include min-width ($tablet-width) {
+      order: 1;
     }
   }
 
@@ -49,6 +69,10 @@
       width: 47px;
       height: 27px;
       background-image: url('../img/icon-feature-money.svg');
+      top: -5px;
+    }
+    @include min-width ($tablet-width) {
+      order: 3;
     }
   }
 
@@ -57,7 +81,11 @@
       width: 34px;
       height: 27px;
       background-image: url('../img/icon-feature-heart.svg');
+      left: 8px;
+    }
 
+    @include min-width ($tablet-width) {
+      order: 5;
     }
   }
 
@@ -67,6 +95,10 @@
       height: 34px;
       background-image: url('../img/icon-feature-ball.svg');
     }
+
+    @include min-width ($tablet-width) {
+      order: 2;
+    }
   }
 
   &--icon-rocket {
@@ -74,6 +106,12 @@
       width: 55px;
       height: 23px;
       background-image: url('../img/icon-feature-rocket.svg');
+      left: -5px;
+      top: -4px;
+    }
+
+    @include min-width ($tablet-width) {
+      order: 4;
     }
   }
 
@@ -82,6 +120,10 @@
       width: 33px;
       height: 32px;
       background-image: url('../img/icon-feature-gift.svg');
+    }
+
+    @include min-width ($tablet-width) {
+      order: 6;
     }
   }
 }

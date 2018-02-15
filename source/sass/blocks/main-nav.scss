@@ -43,9 +43,13 @@
     display: inline-block;
     vertical-align: middle;
     height: 100%;
-    padding: 25px 0;
-    padding-right: 18px;
+    padding: 17px 0;
+    margin-right: 32px;
     box-shadow: none;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 
   @include min-width ($desktop-width) {

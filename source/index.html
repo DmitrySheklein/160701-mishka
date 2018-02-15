@@ -5,7 +5,6 @@
     <title>HTML Academy: Мишка</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/index.js"></script>
   </head>
   <body>
     <header class="page-header">
@@ -27,46 +26,46 @@
                 </li>
               </ul>
             </div>
-          </nav>
-          <nav class="user-nav">
-            <ul class="user-nav__list">
-              <li class="user-nav__item">
-                <form class="search user-nav__search" method="get" action="https://echo.htmlacademy.ru">
-                  <button class="search__button" type="submit">Поиск</button>
-                  <div class="search__input-wrap">
-                    <input class="search__input" type="text" name="search-value" id="search-input" value="">
-                    <label class="search__label" for="search-input">Поиск по сайту</label>
-                  </div>
-                </form>
-              </li>
-              <li class="user-nav__item">
-                  <div class="cart user-nav__cart">
-                    Корзина:
-                    <a class="cart__count">
-                      пока пуста
-                    </a>
-                  </div>
-              </li>
-            </ul>
-          </nav>
+        </nav>
+        <nav class="user-nav">
+          <ul class="user-nav__list">
+            <li class="user-nav__item">
+              <form class="search user-nav__search" method="get" action="https://echo.htmlacademy.ru">
+                <button class="search__button" type="submit">Поиск</button>
+                <div class="search__input-wrap">
+                  <input class="search__input" type="text" name="search-value" id="search-input" value="">
+                  <label class="search__label" for="search-input">Поиск по сайту</label>
+                </div>
+              </form>
+            </li>
+            <li class="user-nav__item">
+                <div class="cart user-nav__cart">
+                  Корзина:
+                  <a class="cart__count">
+                    пока пуста
+                  </a>
+                </div>
+            </li>
+          </ul>
+        </nav>
+        <div class="page-header__feature">
+          <ul class="page-header__features-list">
+            <li class="page-header__feature-item">
+              <a href="#">Новые поступления</a>
+            </li>
+            <li class="page-header__feature-item">
+              <a href="#">Распродажа</a>
+            </li>
+          </ul>
+          <p class="page-header__free">
+            Бесплатная доставка по России
+          </p>
+        </div>
       </div>
     </header>
-    <main class="page-main">
+    <main class="page-main page-main--index">
         <section class="main-slide">
           <div class="main-slide__wrapper">
-            <div class="main-slide__feature">
-              <ul class="main-slide__features-list">
-                <li class="main-slide__feature-item">
-                  <a href="#">Новые поступления</a>
-                </li>
-                <li class="main-slide__feature-item">
-                  <a href="#">Распродажа</a>
-                </li>
-              </ul>
-              <p class="main-slide__free">
-                Бесплатная доставка по России
-              </p>
-            </div>
             <h1 class="main-slide__title">Милые штуки ручной <br> работы для дома</h1>
           </div>
           <ul class="category">
@@ -121,7 +120,7 @@
                     </a>
                   </div>
                   <div class="price-box price-box--main recomended-product__price">
-                      Цена
+                      Цена:
                       <span class="price price--now">990 руб.</span>
                   </div>
                   <div class="recomended-product__btns">
@@ -214,7 +213,8 @@
               </div>
             </div>
             <div class="main-contacts__map">
-              <img src="../img/map-mobile@1x.jpg" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101">
+              <div class="map" id="map"></div>
+              <!-- <img src="../img/map-mobile@1x.jpg" alt="г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101"> -->
             </div>
             <div class="main-contacts__feedback">
               <a href="#" class="btn main-contacts__btn">Напишите нам</a>
@@ -241,12 +241,15 @@
             </ul>
           </div>
           <div class="page-footer__copyright copyright">
-            <b class="copyright__text">Разработано:</b>
+            <b class="copyright__text">Разработано</b>
             <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
               HTML Academy
             </a>
           </div>
         </div>
     </footer>
+
+    <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>

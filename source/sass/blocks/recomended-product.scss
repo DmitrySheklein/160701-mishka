@@ -5,6 +5,7 @@
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 54px;
+    margin-bottom: 0;
   }
 
   @include min-width ($desktop-width) {
@@ -17,10 +18,12 @@
 .recomended-product__info-header {
   position: relative;
   width: 100%;
-  padding-top: 34px;
-  margin-bottom: 30px;
+  padding-top: 28px;
+  margin-bottom: 23px;
 
   @include min-width ($tablet-width) {
+    padding-top: 43px;
+    margin-bottom: 42px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -36,6 +39,14 @@
   @include min-width ($tablet-width) {
     width: 50%;
     padding-right: 53px;
+  }
+}
+
+.recomended-product__features {
+  margin-bottom: 30px;
+
+  @include min-width ($tablet-width) {
+    margin-bottom: 57px;
   }
 }
 
@@ -61,7 +72,7 @@
 
 .recomended-product__name {
   margin-top: 0;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
   font-family: $default-font;
   font-size: 25px;
   font-weight: 700;
@@ -70,9 +81,10 @@
   @include min-width ($tablet-width) {
     font-size: 43px;
     line-height: 50px;
+    margin-left: -4px;
   }
 
-  @include min-width ($tablet-width) {
+  @include min-width ($desktop-width) {
     font-size: 53px;
     line-height: 57px;
   }
@@ -94,7 +106,8 @@
   @include min-width ($tablet-width) {
     margin-bottom: 0;
     max-width: 75px;
-    margin-right: 28px;
+    margin-right: 26px;
+    line-height: 17px;
   }
 
   @include min-width ($desktop-width) {
@@ -107,20 +120,28 @@
 
 .recomended-product__descr {
   margin-top: 0;
-  margin-bottom: 34px;
+  margin-bottom: 15px;
   color: #444444;
   font-family: $default-font;
   font-size: 15px;
   font-weight: 400;
   line-height: 24px;
+
+  @include min-width ($tablet-width) {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 33px;
+  }
 }
 
 
 .recomended-product__price {
-  margin: 29px 0;
+  margin: 20px 0 25px;
 
   @include min-width ($tablet-width) {
-    width: 50%;
+    width: 43%;
+    margin-bottom: 34px;
   }
 }
 

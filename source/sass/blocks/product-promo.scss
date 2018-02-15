@@ -87,9 +87,9 @@
     cursor: pointer;
     @include tr;
 
-/*     .product-promo__video:hover & {
+    .product-promo__video:hover & {
       transform: scale(1.2);
-    } */
+    }
   }
 
   &:hover::before {

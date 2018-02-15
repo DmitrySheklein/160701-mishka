@@ -49,7 +49,7 @@
   cursor: pointer;
   position: absolute;
   top: 24px;
-  right: 30px;
+  right: 27px;
 
   @include min-width ($tablet-width) {
     display: none;
@@ -86,5 +86,62 @@
     &::after {
       transform: rotate(-45deg)
     }
+  }
+}
+
+
+.page-header__feature {
+  display: none;
+
+  @include min-width ($tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 120px;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+  }
+}
+
+.page-header__features-list {
+  @include listclr;
+  display: none;
+
+  @include min-width ($desktop-width) {
+    display: block;
+  }
+}
+
+.page-header__features-list a {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 24px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.page-header__feature-item {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 30px;
+  padding: 25px 0;
+}
+
+.page-header__free {
+  margin: 0;
+  padding: 18px 0;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+
+  @include min-width ($tablet-width) {
+    text-align: right;
+    margin-left: auto;
   }
 }

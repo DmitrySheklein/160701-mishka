@@ -5,6 +5,7 @@
 .social__list {
   @include listclr;
   text-align: center;
+  font-size: 0;
 }
 
 .social__item {

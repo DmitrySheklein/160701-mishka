@@ -1,9 +1,14 @@
 .review {
+  padding-top: 26px;
+  padding-bottom: 50px;
 
   @include min-width ($tablet-width) {
     background-image: url('../img/review@1x.jpg');
     background-repeat: no-repeat;
     background-position: left;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 72px;
   }
 
   @include min-width ($desktop-width) {
@@ -20,8 +25,8 @@
   @include min-width ($tablet-width) {
     @include container;
 
-    padding-top: 85px;
-    padding-bottom: 53px;
+    padding-top: 77px;
+    padding-bottom: 43px;
   }
 
   @include min-width ($desktop-width) {
@@ -35,7 +40,11 @@
 }
 
 .review__title {
-  margin-bottom: 38px;
+  margin-bottom: 24px;
+
+  @include min-width ($tablet-width) {
+    margin-bottom: 49px;
+  }
 }
 
 .review__list-wrapper {
@@ -49,20 +58,20 @@
 .review__descr {
   max-width: 773px;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 27px;
   color: #444444;
   font-family: $default-font;
   font-size: 15px;
   font-weight: 400;
   line-height: 30px;
-
   @include min-width ($tablet-width) {
     font-size: 17px;
+    margin-bottom: 58px;
   }
 }
 
 .review__author {
-  margin-bottom: 36px;
+  margin-bottom: 27px;
 
   @include min-width ($tablet-width) {
     margin-bottom: 0;
@@ -74,7 +83,11 @@
   font-size: 17px;
   font-weight: 700;
   line-height: 24px;
-  margin-bottom: 15px;
+  margin-bottom: 3px;
+
+  @include min-width ($tablet-width) {
+    font-size: 18px;
+  }
 }
 
 .review__author-link {
@@ -85,15 +98,31 @@
 }
 
 .review__btns {
+  position: relative;
   display: flex;
   margin-bottom: 38px;
   border: 1px solid #ececec;
 
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 50%;
+    height: 100%;
+    width: 1px;
+    margin-left: -0.5px;
+    background: #ececec;
+  }
+
   @include min-width ($tablet-width) {
+    &::before {
+      display: none;
+    }
+
     margin-bottom: 0;
     position: absolute;
-    right: 0;
-    bottom: 0;
+    right: 18px;
+    bottom: 3px;
     border: none;
   }
 }

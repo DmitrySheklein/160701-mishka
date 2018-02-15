@@ -61,7 +61,7 @@
 
 .category__link {
   display: block;
-  padding: 30px;
+  padding: 28px;
   padding-right: 76px;
   color: #ffffff;
   font-family: $default-font;
@@ -72,6 +72,12 @@
 
   &:active {
     color: rgba(#fff, 0.3)
+  }
+
+  @include min-width ($tablet-width) {
+    padding: 27px 76px 34px 36px;
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 

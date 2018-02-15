@@ -8,6 +8,10 @@
   @include min-width ($desktop-width) {
     margin-bottom: 105px;
   }
+
+  &--index {
+    margin-bottom: 0;
+  }
 }
 
 .page-main__title {
