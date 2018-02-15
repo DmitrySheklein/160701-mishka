@@ -65,26 +65,25 @@
   }
 
   &--closed {
-
-
     &::before,
     &::after {
-    content: '';
+      content: "";
       display: block;
       width: 30px;
       top: 50%;
       left: 0;
       position: absolute;
       height: 2px;
-      background: #000;
+      background: #000000;
       box-shadow: none;
     }
 
     &::before {
-      transform: rotate(45deg)
+      transform: rotate(45deg);
     }
+
     &::after {
-      transform: rotate(-45deg)
+      transform: rotate(-45deg);
     }
   }
 }

@@ -1,13 +1,14 @@
 .copyright {
   text-align: center;
 }
+
 .copyright__link {
   display: inline-block;
   vertical-align: middle;
   margin-left: 30px;
   width: 27px;
   height: 34px;
-  background: url('../img/logo-htmlacademy.svg') no-repeat;
+  background: url("../img/logo-htmlacademy.svg") no-repeat;
   font-size: 0;
 
   @include min-width ($tablet-width) {

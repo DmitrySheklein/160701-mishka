@@ -9,6 +9,7 @@
 
 .category__item {
   position: relative;
+
   @include tr;
 
   @include min-width ($tablet-width) {
@@ -17,7 +18,7 @@
   }
 
   &::before {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     top: 50%;
@@ -36,7 +37,7 @@
     &::before {
       width: 40px;
       height: 62px;
-      background: url('../img/icon-interior.svg');
+      background: url("../img/icon-interior.svg");
       right: 36px;
     }
   }
@@ -52,10 +53,9 @@
     &::before {
       width: 60px;
       height: 60px;
-      background: url('../img/icon-toy.svg');
+      background: url("../img/icon-toy.svg");
       right: 29px;
     }
-
   }
 }
 
@@ -68,10 +68,11 @@
   font-size: 19px;
   font-weight: 700;
   line-height: 24px;
+
   @include tr;
 
   &:active {
-    color: rgba(#fff, 0.3)
+    color: rgba(#ffffff, 0.3);
   }
 
   @include min-width ($tablet-width) {

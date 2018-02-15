@@ -13,6 +13,7 @@
     }
   }
 }
+
 .user-nav__list {
   @include listclr;
 }
@@ -22,7 +23,7 @@
   padding: 30px;
   padding-left: 76px;
   box-shadow: 0 1px 0 #ececec,
-  inset 0 1px 0 #ececec;
+    inset 0 1px 0 #ececec;
 
   @include min-width ($tablet-width) {
     display: inline-block;
@@ -44,12 +45,13 @@
   display: inline-block;
   position: relative;
   padding-left: 0;
-  margin-left: 0px;
+  margin-left: 0;
   font-family: $default-font;
   font-size: 17px;
   font-weight: 700;
   line-height: 24px;
   text-align: center;
+
   @include tr;
 
   &:hover {
@@ -61,14 +63,14 @@
   }
 
   &::before {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     top: 3px;
     left: -45px;
     width: 21px;
     height: 18px;
-    background: url('../img/icon-cart.svg');
+    background: url("../img/icon-cart.svg");
   }
 
   @include min-width ($tablet-width) {
@@ -83,6 +85,7 @@
 
 .user-nav__search {
   display: inline-block;
+
   @include min-width ($tablet-width) {
     padding: 32px;
     border-left: 1px solid #ececec;

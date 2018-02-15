@@ -10,7 +10,7 @@
   z-index: 1;
   width: 18px;
   height: 18px;
-  background: url('../img/icon-search.svg');
+  background: url("../img/icon-search.svg");
   cursor: pointer;
 
   @include min-width ($tablet-width) {

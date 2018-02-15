@@ -3,7 +3,7 @@
   background: #f1f1f1;
 
   @include min-width ($tablet-width) {
-      padding: 51px 0 50px;
+    padding: 51px 0 50px;
   }
 }
 
@@ -34,6 +34,6 @@
     padding-bottom: 0;
     margin-bottom: 0;
     border: none;
-    margin-left: 94px
+    margin-left: 94px;
   }
 }

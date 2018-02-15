@@ -42,8 +42,8 @@
     margin-bottom: 60px;
   }
 
-  &:before {
-    content: '';
+  &::before {
+    content: "";
     position: relative;
     display: block;
     margin-bottom: 20px;
@@ -52,10 +52,10 @@
   }
 
   &--icon-flower {
-    &:before {
+    &::before {
       width: 33px;
       height: 38px;
-      background-image: url('../img/icon-feature-flower.svg');
+      background-image: url("../img/icon-feature-flower.svg");
       left: 7px;
     }
 
@@ -65,22 +65,23 @@
   }
 
   &--icon-money {
-    &:before {
+    &::before {
       width: 47px;
       height: 27px;
-      background-image: url('../img/icon-feature-money.svg');
+      background-image: url("../img/icon-feature-money.svg");
       top: -5px;
     }
+
     @include min-width ($tablet-width) {
       order: 3;
     }
   }
 
   &--icon-heart {
-    &:before {
+    &::before {
       width: 34px;
       height: 27px;
-      background-image: url('../img/icon-feature-heart.svg');
+      background-image: url("../img/icon-feature-heart.svg");
       left: 8px;
     }
 
@@ -90,10 +91,10 @@
   }
 
   &--icon-ball {
-    &:before {
+    &::before {
       width: 35px;
       height: 34px;
-      background-image: url('../img/icon-feature-ball.svg');
+      background-image: url("../img/icon-feature-ball.svg");
     }
 
     @include min-width ($tablet-width) {
@@ -102,10 +103,10 @@
   }
 
   &--icon-rocket {
-    &:before {
+    &::before {
       width: 55px;
       height: 23px;
-      background-image: url('../img/icon-feature-rocket.svg');
+      background-image: url("../img/icon-feature-rocket.svg");
       left: -5px;
       top: -4px;
     }
@@ -116,10 +117,10 @@
   }
 
   &--icon-gift {
-    &:before {
+    &::before {
       width: 33px;
       height: 32px;
-      background-image: url('../img/icon-feature-gift.svg');
+      background-image: url("../img/icon-feature-gift.svg");
     }
 
     @include min-width ($tablet-width) {
