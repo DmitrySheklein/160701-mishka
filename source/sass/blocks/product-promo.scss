@@ -18,7 +18,7 @@
   position: relative;
   overflow: hidden;
 
-  @include min-width ($desktop-width) {
+  @include min-width ($tablet-width) {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -27,7 +27,7 @@
 
 .product-promo__name {
   position: relative;
-  padding-top: 30px;
+  padding-top: 21px;
   margin-top: 0;
   margin-bottom: 25px;
   font-size: 17px;
@@ -37,8 +37,13 @@
   &--icon {
     padding-left: 34px + 32px + 25px;
 
+    @include min-width ($tablet-width) {
+      padding-left: 106px;
+    }
+
     @include min-width ($desktop-width) {
-      padding-left: 32px;
+      padding-left: 78px;
+      padding-right: 78px;
     }
 
     &::before {
@@ -55,17 +60,26 @@
       background-size: contain;
       background-repeat: no-repeat;
 
+      @include min-width ($tablet-width) {
+        width: 38px;
+        height: 34px;
+      }
+
       @include min-width ($desktop-width) {
         position: static;
         display: block;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
         margin-right: 0;
       }
     }
   }
 
-  @include min-width ($desktop-width) {
+  @include min-width ($tablet-width) {
+    width: 100%;
     font-size: 20px;
+    line-height: 24px;
+    padding-top: 40px;
+    margin-bottom: 6px;
   }
 
   @include min-width ($desktop-width) {
@@ -84,7 +98,6 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    // transform: translate(-50%, -50%);
     margin-left: -55px;
     margin-top: -33px;
     background-image: url("../img/icon-play.svg");
@@ -93,9 +106,6 @@
 
     @include tr;
 
-    .product-promo__video:hover & {
-      transform: scale(1.2);
-    }
   }
 
   &:hover::before {
@@ -109,6 +119,8 @@
 
   @include min-width ($tablet-width) {
     order: -1;
+    width: 100%;
+    min-height: 455px;
   }
 
   @include min-width ($desktop-width) {
@@ -122,23 +134,47 @@
 
 .product-promo__main-pic {
   width: 100%;
+
+  @include min-width ($desktop-width) {
+    height: 100%;
+  }
 }
 
 .product-promo__info {
   padding: 34px;
+  padding-top: 25px;
 
+  @include min-width ($tablet-width) {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 45px;
+  }
   @include min-width ($desktop-width) {
     width: 35%;
+    padding-left: 78px;
+    padding-right: 58px;
+    padding-top: 29px;
+    padding-bottom: 30px;
   }
 }
 
 .product-promo__descr {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   color: #444444;
   font-size: 13px;
   font-weight: 400;
   line-height: 24px;
+
+  @include min-width ($tablet-width) {
+    font-size: 15px;
+    line-height: 30px;
+    margin-bottom: 35px;
+  }
+
+  @include min-width ($tablet-width) {
+    margin-bottom: 46px;
+  }
 }
 
 .product-promo__btn {

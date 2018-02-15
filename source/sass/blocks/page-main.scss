@@ -18,6 +18,11 @@
       margin-bottom: 50px;
     }
   }
+  &--catalog {
+    @include min-width ($tablet-width) {
+      // margin-bottom: 50px;
+    }
+  }
 }
 
 .page-main__title {
@@ -57,6 +62,12 @@
     font-size: 17px;
     line-height: 30px;
   }
+
+  @include min-width ($desktop-width) {
+    max-width: 700px;
+    padding-top: 27px;
+    margin: auto;
+  }
 }
 
 .page-main__container {
@@ -67,8 +78,4 @@
     margin-bottom: 45px;
   }
 
-  @include min-width ($desktop-width) {
-    max-width: 700px;
-    padding-top: 27px;
-  }
 }
