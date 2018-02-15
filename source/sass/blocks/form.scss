@@ -82,6 +82,10 @@
       display: flex;
       flex-wrap: wrap;
     }
+
+    @include min-width ($desktop-width) {
+      max-width: 790px;
+    }
   }
 }
 
@@ -118,6 +122,10 @@
 
     @include min-width ($desktop-width) {
       width: 33%;
+
+      &:nth-child(even) {
+        width: 33%;
+      }
     }
   }
 
@@ -149,7 +157,7 @@
   }
 
   @include min-width ($desktop-width) {
-    margin-left: 170px;
+    margin-left: 178px;
   }
 }
 
@@ -173,6 +181,10 @@
     @include min-width ($tablet-width) {
       background: none;
     }
+
+    @include min-width ($desktop-width) {
+      padding-left: 64px;
+    }
   }
 
   &::after {
@@ -194,6 +206,10 @@
     &::after {
       display: none;
     }
+  }
+
+  @include min-width ($desktop-width) {
+    flex-basis: 178px;
   }
 }
 
@@ -424,6 +440,10 @@
     font-size: 19px;
     margin-top: 15px;
     padding: 10px;
+  }
+
+  @include min-width ($desktop-width) {
+    margin-top: 11px;
   }
 
   &:hover,

@@ -41,6 +41,8 @@
 
   @include min-width ($desktop-width) {
     margin-bottom: 111px;
+    font-size: 53px;
+    line-height: 57px;
   }
 }
 
@@ -63,5 +65,10 @@
 
   @include min-width ($tablet-width) {
     margin-bottom: 45px;
+  }
+
+  @include min-width ($desktop-width) {
+    max-width: 700px;
+    padding-top: 27px;
   }
 }
