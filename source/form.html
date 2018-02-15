@@ -16,44 +16,57 @@
           </a>
         </div>
         <button class="page-header__button" type="button">
-            Открыть меню
+          Открыть меню
         </button>
         <nav class="main-nav">
-            <div class="main-nav__wrapper">
-              <ul class="main-nav__list">
-                <li class="main-nav__item">
-                  <a href="/catalog.html" class="main-nav__link">Каталог товаров</a>
-                </li>
-                <li class="main-nav__item">
-                  <a href="/form.html" class="main-nav__link">Вязание на заказ</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-          <nav class="user-nav">
-            <ul class="user-nav__list">
-              <li class="user-nav__item">
-                <form class="search user-nav__search" method="get" action="https://echo.htmlacademy.ru">
-                  <button class="search__button" type="submit">Поиск</button>
-                  <div class="search__input-wrap">
-                    <input class="search__input" type="text" name="search-value" id="search-input" value="">
-                    <label class="search__label" for="search-input">Поиск по сайту</label>
-                  </div>
-                </form>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a href="/catalog.html" class="main-nav__link">Каталог товаров</a>
               </li>
-              <li class="user-nav__item">
-                  <div class="cart user-nav__cart">
-                    Корзина:
-                    <a class="cart__count">
-                      пока пуста
-                    </a>
-                  </div>
+              <li class="main-nav__item">
+                <a href="/form.html" class="main-nav__link">Вязание на заказ</a>
               </li>
             </ul>
-          </nav>
+          </div>
+        </nav>
+        <nav class="user-nav">
+          <ul class="user-nav__list">
+            <li class="user-nav__item">
+              <form class="search user-nav__search" method="get" action="https://echo.htmlacademy.ru">
+                <button class="search__button" type="submit">Поиск</button>
+                <div class="search__input-wrap">
+                  <input class="search__input" type="text" name="search-value" id="search-input" value="">
+                  <label class="search__label" for="search-input">Поиск по сайту</label>
+                </div>
+              </form>
+            </li>
+            <li class="user-nav__item">
+              <div class="cart user-nav__cart">
+                Корзина:
+                <a class="cart__count">
+                  пока пуста
+                </a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <div class="page-header__feature">
+          <ul class="page-header__features-list">
+            <li class="page-header__feature-item">
+              <a href="#">Новые поступления</a>
+            </li>
+            <li class="page-header__feature-item">
+              <a href="#">Распродажа</a>
+            </li>
+          </ul>
+          <p class="page-header__free">
+            Бесплатная доставка по России
+          </p>
+        </div>
       </div>
     </header>
-    <main class="page-main">
+    <main class="page-main page-main--form">
       <h1 class="page-main__title">Вязание на заказ</h1>
       <div class="page-main__container">
         <p class="page-main__descr">
@@ -76,7 +89,7 @@
             </div>
             </div>
           </fieldset>
-          <fieldset class="form__group form__group--grey">
+          <fieldset class="form__group form__group--check form__group--grey">
             <div class="form__group__inner">
               <legend class="form__group-title"><span>Цвет</span></legend>
               <div class="form__body form__body--color">
@@ -107,7 +120,7 @@
               </div>
             </div>
           </fieldset>
-          <fieldset class="form__group">
+          <fieldset class="form__group form__group--text">
             <div class="form__group__inner">
               <legend class="form__group-title"><span>ФИО</span></legend>
               <div class="form__body">

@@ -12,6 +12,12 @@
   &--index {
     margin-bottom: 0;
   }
+
+  &--form {
+    @include min-width ($tablet-width) {
+      margin-bottom: 50px;
+    }
+  }
 }
 
 .page-main__title {
@@ -27,6 +33,10 @@
 
   @include min-width ($tablet-width) {
     margin-bottom: 67px;
+    font-size: 43px;
+    line-height: 50px;
+    padding-bottom: 86px;
+    padding-top: 94px;
   }
 
   @include min-width ($desktop-width) {
@@ -50,4 +60,8 @@
 .page-main__container {
   @include container;
   margin-bottom: 14px;
+
+  @include min-width ($tablet-width) {
+    margin-bottom: 45px;
+  }
 }
