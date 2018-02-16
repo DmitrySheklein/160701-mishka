@@ -41,7 +41,7 @@
     padding-right: 53px;
   }
 
-  @include min-width ($tablet-width) {
+  @include min-width ($desktop-width) {
     width: 39%;
   }
 }

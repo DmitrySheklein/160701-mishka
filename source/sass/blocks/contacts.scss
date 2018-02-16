@@ -52,7 +52,7 @@
   font-style: normal;
   padding-right: 30px;
 
-  @include min-width ($tablet-width) {
+  @include min-width ($desktop-width) {
     font-size: 17px;
     padding-right: 75px;
   }

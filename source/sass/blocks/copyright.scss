@@ -5,7 +5,7 @@
 .copyright__link {
   display: inline-block;
   vertical-align: middle;
-  margin-left: 30px;
+  margin-left: 26px;
   width: 27px;
   height: 34px;
   background: url("../img/logo-htmlacademy.svg") no-repeat;
@@ -24,5 +24,9 @@
 
   @include min-width ($tablet-width) {
     margin-top: 11px;
+  }
+
+  @include min-width ($desktop-width) {
+    margin-top: 13px;
   }
 }

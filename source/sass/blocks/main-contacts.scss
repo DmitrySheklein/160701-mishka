@@ -73,7 +73,7 @@
     margin-bottom: 28px;
   }
 
-  @include min-width ($tablet-width) {
+  @include min-width ($desktop-width) {
     margin-bottom: 49px;
   }
 }
