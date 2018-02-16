@@ -1,5 +1,29 @@
 .about {
   padding-bottom: 30px;
+  padding-top: 32px;
+
+  @include min-width ($tablet-width) {
+    padding-top: 65px;
+    padding-bottom: 28px;
+  }
+
+  @include min-width ($desktop-width) {
+    padding-top: 81px;
+    padding-bottom: 18px;
+  }
+}
+
+.about__title {
+  @include min-width ($tablet-width) {
+    margin-bottom: 48px;
+    margin-left: -6px;
+  }
+}
+
+.about__wrapper {
+  @include min-width ($desktop-width) {
+    padding-left: 175px;
+  }
 }
 
 .about__list {
@@ -9,10 +33,14 @@
     display: flex;
     flex-wrap: wrap;
   }
+
+  @include min-width($desktop-width) {
+    max-width: 700px;
+  }
 }
 
 .about__item {
-  margin-bottom: 30px;
+  margin-bottom: 34px;
 
   &:last-child {
     margin-bottom: 0;
@@ -20,6 +48,93 @@
 
   @include min-width($tablet-width) {
     width: 50%;
+    margin-bottom: 60px;
+  }
+
+  &::before {
+    content: "";
+    position: relative;
+    display: block;
+    margin-bottom: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &--icon-flower {
+    &::before {
+      width: 33px;
+      height: 38px;
+      background-image: url("../img/icon-feature-flower.svg");
+      left: 7px;
+    }
+
+    @include min-width ($tablet-width) {
+      order: 1;
+    }
+  }
+
+  &--icon-money {
+    &::before {
+      width: 47px;
+      height: 27px;
+      background-image: url("../img/icon-feature-money.svg");
+      top: -5px;
+    }
+
+    @include min-width ($tablet-width) {
+      order: 3;
+    }
+  }
+
+  &--icon-heart {
+    &::before {
+      width: 34px;
+      height: 27px;
+      background-image: url("../img/icon-feature-heart.svg");
+      left: 8px;
+    }
+
+    @include min-width ($tablet-width) {
+      order: 5;
+    }
+  }
+
+  &--icon-ball {
+    &::before {
+      width: 35px;
+      height: 34px;
+      background-image: url("../img/icon-feature-ball.svg");
+    }
+
+    @include min-width ($tablet-width) {
+      order: 2;
+    }
+  }
+
+  &--icon-rocket {
+    &::before {
+      width: 55px;
+      height: 23px;
+      background-image: url("../img/icon-feature-rocket.svg");
+      left: -5px;
+      top: -4px;
+    }
+
+    @include min-width ($tablet-width) {
+      order: 4;
+    }
+  }
+
+  &--icon-gift {
+    &::before {
+      width: 33px;
+      height: 32px;
+      background-image: url("../img/icon-feature-gift.svg");
+    }
+
+    @include min-width ($tablet-width) {
+      order: 6;
+    }
   }
 }
 
@@ -36,6 +151,6 @@
   }
 }
 
-.about__text-devider {
+.about__descr br {
   display: block;
 }

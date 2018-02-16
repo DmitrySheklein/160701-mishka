@@ -1,15 +1,48 @@
-.review__wrapper {
-  position: relative;
-  padding-top: 30px;
-  padding-bottom: 45px;
+.review {
+  padding-top: 26px;
+  padding-bottom: 50px;
 
   @include min-width ($tablet-width) {
-    padding-top: 85px;
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 72px;
+  }
+
+  @include min-width ($desktop-width) {
+    background: none;
+  }
+}
+
+.review__wrapper {
+  position: relative;
+  padding: 0 30px;
+
+  @include min-width ($tablet-width) {
+    @include container;
+
+    padding-top: 77px;
+    padding-bottom: 43px;
+  }
+
+  @include min-width ($desktop-width) {
+    padding-left: 175px;
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-top: 87px;
+    padding-bottom: 102px;
   }
 }
 
 .review__title {
-  margin-bottom: 38px;
+  margin-bottom: 24px;
+
+  @include min-width ($tablet-width) {
+    margin-bottom: 49px;
+  }
 }
 
 .review__list-wrapper {
@@ -21,17 +54,27 @@
 }
 
 .review__descr {
+  max-width: 773px;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 27px;
   color: #444444;
   font-family: $default-font;
   font-size: 15px;
   font-weight: 400;
   line-height: 30px;
+
+  @include min-width ($tablet-width) {
+    font-size: 17px;
+    margin-bottom: 58px;
+  }
+
+  @include min-width ($desktop-width) {
+    margin-bottom: 39px;
+  }
 }
 
 .review__author {
-  margin-bottom: 36px;
+  margin-bottom: 27px;
 
   @include min-width ($tablet-width) {
     margin-bottom: 0;
@@ -43,7 +86,11 @@
   font-size: 17px;
   font-weight: 700;
   line-height: 24px;
-  margin-bottom: 15px;
+  margin-bottom: 3px;
+
+  @include min-width ($tablet-width) {
+    font-size: 18px;
+  }
 }
 
 .review__author-link {
@@ -54,20 +101,76 @@
 }
 
 .review__btns {
+  position: relative;
+  display: flex;
   margin-bottom: 38px;
+  border: 1px solid #ececec;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    height: 100%;
+    width: 1px;
+    margin-left: -0.5px;
+    background: #ececec;
+  }
 
   @include min-width ($tablet-width) {
+    &::before {
+      display: none;
+    }
+
     margin-bottom: 0;
     position: absolute;
-    right: 0;
-    bottom: 0;
+    right: 18px;
+    bottom: 3px;
+    border: none;
+  }
+}
+
+.review__btn {
+  @include btnclr;
+  cursor: pointer;
+  width: 50%;
+  min-width: 50px;
+  height: 52px;
+  background-repeat: no-repeat;
+  background-size: 50px 26px;
+
+  &--prev {
+    background-image: url("../img/icon-left-arrow.svg");
+    background-position: center;
+  }
+
+  &--next {
+    background-image: url("../img/icon-right-arrow.svg");
+    background-position: center;
+  }
+
+  @include min-width ($tablet-width) {
+    margin-right: 37px;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
 
 .review__btn-send {
+  width: 100%;
+
   @include min-width ($tablet-width) {
     position: absolute;
     top: 80px;
+    right: 0;
+    min-width: 175px;
+    width: auto;
+  }
+
+  @include min-width ($desktop-width) {
+    top: 97px;
     right: 0;
   }
 }

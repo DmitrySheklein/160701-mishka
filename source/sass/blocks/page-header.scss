@@ -14,10 +14,14 @@
   @include min-width ($tablet-width) {
     @include container;
 
-    padding: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 0;
+  }
+
+  @include min-width ($desktop-width) {
+    padding: 0;
   }
 }
 
@@ -45,7 +49,7 @@
   cursor: pointer;
   position: absolute;
   top: 24px;
-  right: 30px;
+  right: 27px;
 
   @include min-width ($tablet-width) {
     display: none;
@@ -58,5 +62,89 @@
     height: 2px;
     background: #000000;
     box-shadow: 0 6px #000000, 0 -6px #000000;
+  }
+
+  &--closed {
+    &::before,
+    &::after {
+      content: "";
+      display: block;
+      width: 30px;
+      top: 50%;
+      left: 0;
+      position: absolute;
+      height: 2px;
+      background: #000000;
+      box-shadow: none;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+
+.page-header__feature {
+  display: none;
+
+  @include min-width ($tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+  }
+}
+
+.page-header__features-list {
+  @include listclr;
+  display: none;
+
+  @include min-width ($desktop-width) {
+    display: block;
+  }
+}
+
+.page-header__features-list a {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 24px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.page-header__feature-item {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 30px;
+  padding: 25px 0;
+
+  @include min-width ($desktop-width) {
+    padding: 18px 0;
+    margin-right: 58px;
+  }
+}
+
+.page-header__free {
+  margin: 0;
+  padding: 18px 0;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+
+  @include min-width ($tablet-width) {
+    text-align: right;
+    margin-left: auto;
   }
 }

@@ -1,0 +1,32 @@
+.copyright {
+  text-align: center;
+}
+
+.copyright__link {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 26px;
+  width: 27px;
+  height: 34px;
+  background: url("../img/logo-htmlacademy.svg") no-repeat;
+  font-size: 0;
+
+  @include min-width ($tablet-width) {
+    margin-left: 25px;
+  }
+}
+
+.copyright__text {
+  display: inline-block;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 18px;
+
+  @include min-width ($tablet-width) {
+    margin-top: 11px;
+  }
+
+  @include min-width ($desktop-width) {
+    margin-top: 13px;
+  }
+}

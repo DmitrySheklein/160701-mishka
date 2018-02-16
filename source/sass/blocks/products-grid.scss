@@ -1,17 +1,25 @@
 .products-grid {
   margin-bottom: 30px;
+  padding-top: 8px;
 
   @include min-width ($desktop-width) {
     display: flex;
     flex-wrap: wrap;
+    padding-top: 35px;
+    margin-bottom: 5px;
   }
 }
 
 .products-grid__item {
   margin-bottom: 30px;
 
+  @include min-width ($tablet-width) {
+    margin-bottom: 55px;
+  }
+
   @include min-width ($desktop-width) {
     max-width: 315px;
+    width: 100%;
     margin-right: 50px;
 
     &:last-child {

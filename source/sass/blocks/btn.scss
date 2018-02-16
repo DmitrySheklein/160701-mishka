@@ -11,6 +11,7 @@
   text-transform: uppercase;
   border: 2px solid #444444;
   background-color: #ffffff;
+  outline: none;
   cursor: pointer;
 
   @include tr;
@@ -40,6 +41,12 @@
     @include btnclr;
     width: 21px;
     height: 18px;
-    background: #cacaca;
+    padding: 0;
+    background: transparent url("../img/icon-cart.svg") no-repeat;
+
+    &:hover {
+      background: transparent url("../img/icon-cart.svg") no-repeat;
+      opacity: 0.4;
+    }
   }
 }

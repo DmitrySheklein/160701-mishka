@@ -38,3 +38,9 @@
     @content;
   }
 }
+
+@mixin max-width($size) {
+  @media (max-width: $size) {
+    @content;
+  }
+}

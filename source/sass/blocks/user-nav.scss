@@ -1,14 +1,35 @@
+.user-nav {
+  background: #ffffff;
+
+  @include max-width ($mobile-width) {
+    display: none;
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    top: calc(100% + 168px);
+
+    &--active {
+      display: block;
+    }
+  }
+}
+
 .user-nav__list {
   @include listclr;
 }
 
 .user-nav__item {
+  text-align: left;
   padding: 30px;
+  padding-left: 76px;
+  box-shadow: 0 1px 0 #ececec,
+    inset 0 1px 0 #ececec;
 
   @include min-width ($tablet-width) {
     display: inline-block;
     vertical-align: middle;
     padding: 0;
+    box-shadow: none;
   }
 }
 
@@ -21,21 +42,52 @@
 }
 
 .user-nav__cart {
+  display: inline-block;
+  position: relative;
+  padding-left: 0;
+  margin-left: 0;
   font-family: $default-font;
   font-size: 17px;
   font-weight: 700;
   line-height: 24px;
   text-align: center;
 
-  @include min-width ($desktop-width) {
-    padding-left: 85px;
+  @include tr;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: -45px;
+    width: 21px;
+    height: 18px;
+    background: url("../img/icon-cart.svg");
+  }
+
+  @include min-width ($tablet-width) {
+    margin-left: 30px;
+    padding-left: 50px;
+
+    &::before {
+      left: 0;
+    }
   }
 }
 
 .user-nav__search {
-  padding: 33px;
+  display: inline-block;
 
   @include min-width ($tablet-width) {
+    padding: 32px;
     border-left: 1px solid #ececec;
     border-right: 1px solid #ececec;
   }

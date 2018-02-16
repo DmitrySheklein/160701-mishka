@@ -1,7 +1,20 @@
 .main-nav {
+  @include max-width ($mobile-width) {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    background: #ffffff;
+
+    &--active {
+      display: block;
+    }
+  }
+
   @include min-width ($tablet-width) {
     order: 1;
     position: absolute;
+    z-index: 1;
     top: 101%;
   }
 
@@ -22,21 +35,31 @@
 
 .main-nav__item {
   padding: 30px;
-  text-align: center;
+  padding-left: 76px;
+  text-align: left;
+  box-shadow: 0 1px 0 #ececec,
+    inset 0 1px 0 #ececec;
 
   @include min-width ($tablet-width) {
     display: inline-block;
     vertical-align: middle;
     height: 100%;
-    padding: 25px 0;
-    padding-right: 18px;
+    padding: 17px 0;
+    margin-right: 32px;
+    box-shadow: none;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 
   @include min-width ($desktop-width) {
     padding: 30px;
+    margin-right: 0;
 
     &:first-child {
       padding-left: 0;
+      padding-right: 35px;
       border-right: 1px solid #ececec;
     }
   }
@@ -48,11 +71,21 @@
   font-weight: 700;
   line-height: 24px;
 
+  @include tr;
+
   @include min-width ($tablet-width) {
     font-size: 15px;
   }
 
   @include min-width ($desktop-width) {
     font-size: 17px;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }

@@ -1,22 +1,53 @@
+.page-main {
+  margin-bottom: 58px;
+
+  @include min-width ($tablet-width) {
+    margin-bottom: 63px;
+  }
+
+  @include min-width ($desktop-width) {
+    margin-bottom: 105px;
+  }
+
+  &--index {
+    margin-bottom: 0;
+  }
+
+  &--form {
+    @include min-width ($tablet-width) {
+      margin-bottom: 50px;
+    }
+  }
+}
+
 .page-main__title {
   margin: 0;
-  margin-bottom: 30px;
-  padding: 75px 0;
+  margin-bottom: 25px;
+  padding: 72px 0;
   background: #f1f1f1;
   text-align: center;
+  color: #231f20;
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 30px;
 
   @include min-width ($tablet-width) {
     margin-bottom: 67px;
+    font-size: 43px;
+    line-height: 50px;
+    padding-bottom: 86px;
+    padding-top: 94px;
   }
 
   @include min-width ($desktop-width) {
     margin-bottom: 111px;
+    font-size: 53px;
+    line-height: 57px;
   }
 }
 
 .page-main__descr {
   margin: 0;
-  margin-bottom: 30px;
   color: #444444;
   font-size: 13px;
   font-weight: 400;
@@ -26,8 +57,19 @@
     font-size: 17px;
     line-height: 30px;
   }
+
+  @include min-width ($desktop-width) {
+    max-width: 700px;
+    padding-top: 27px;
+    margin: auto;
+  }
 }
 
 .page-main__container {
   @include container;
+  margin-bottom: 14px;
+
+  @include min-width ($tablet-width) {
+    margin-bottom: 45px;
+  }
 }

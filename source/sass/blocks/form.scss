@@ -1,22 +1,68 @@
 .form {
   margin-bottom: 55px;
+
+  @include min-width ($tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .form__group {
   margin: 0;
-  padding: 50px 0;
+  margin-bottom: 23px;
+  padding: 0;
   border: none;
 
+  @include min-width ($tablet-width) {
+    padding-bottom: 50px;
+    margin-bottom: 0;
+  }
+
+  &--check {
+    @include min-width ($tablet-width) {
+      padding-bottom: 34px;
+      padding-top: 37px;
+    }
+  }
+
+  &--text {
+    @include min-width ($tablet-width) {
+      padding-top: 39px;
+    }
+  }
+
+  &--textarea {
+    margin-bottom: 14px;
+
+    @include min-width ($tablet-width) {
+      padding-top: 36px;
+      padding-bottom: 0;
+      margin-bottom: 46px;
+    }
+  }
+
   &--grey {
-    background: #f1f1f1;
+    background: none;
+
+    @include min-width ($tablet-width) {
+      background: #f1f1f1;
+    }
   }
 
   &--phone {
     padding-bottom: 0;
+
+    @include min-width ($tablet-width) {
+      padding-top: 39px;
+      padding-bottom: 5px;
+    }
   }
 
   &--email {
     padding-top: 0;
+
+    @include min-width ($tablet-width) {
+      padding-bottom: 44px;
+    }
   }
 }
 
@@ -36,74 +82,374 @@
       display: flex;
       flex-wrap: wrap;
     }
+
+    @include min-width ($desktop-width) {
+      max-width: 790px;
+    }
   }
 }
 
 .form__input-wrap {
   flex-grow: 1;
 
+  &--radio {
+    margin-bottom: 4px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    @include min-width ($tablet-width) {
+      margin-bottom: 11px;
+    }
+  }
+
   &--check {
+    margin-bottom: 23px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
     @include min-width ($tablet-width) {
       width: 50%;
+      margin-bottom: 5px;
+
+      &:nth-child(even) {
+        width: 45%;
+      }
     }
 
     @include min-width ($desktop-width) {
       width: 33%;
+
+      &:nth-child(even) {
+        width: 33%;
+      }
+    }
+  }
+
+  &--text {
+    margin-bottom: 17px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    @include min-width ($tablet-width) {
+      display: flex;
+      align-items: center;
+      max-width: 700px;
+      margin-bottom: 13px;
     }
   }
 }
 
 .form__action {
-  @include container;
+  max-width: 700px;
+  width: 100%;
 
   @include min-width ($tablet-width) {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
-    padding-left: 170px;
+  }
+
+  @include min-width ($desktop-width) {
+    margin-left: 178px;
   }
 }
 
 .form__group-title {
-  margin-bottom: 30px;
+  display: flex;
+  position: relative;
+  margin-bottom: 15px;
   color: #63d1bb;
   font-size: 17px;
   font-weight: 700;
   line-height: 16px;
   text-transform: uppercase;
 
+  span {
+    background: #ffffff;
+    position: relative;
+    display: inline-block;
+    padding: 10px 25px 10px 0;
+    z-index: 1;
+
+    @include min-width ($tablet-width) {
+      background: none;
+    }
+
+    @include min-width ($desktop-width) {
+      padding-left: 64px;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    display: inline-block;
+    background: #63d1bb;
+    height: 1px;
+  }
+
   @include min-width ($tablet-width) {
     flex-basis: 170px;
+    flex-shrink: 0;
+    padding-top: 20px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  @include min-width ($desktop-width) {
+    flex-basis: 178px;
   }
 }
 
 .form__label {
+  display: inline-block;
+  position: relative;
   color: #000000;
   font-size: 17px;
   font-weight: 700;
   line-height: 18px;
   cursor: pointer;
+
+  @include min-width ($tablet-width) {
+    font-size: 19px;
+  }
+
+  &--text {
+    @include min-width ($tablet-width) {
+      margin-right: 25px;
+    }
+  }
 }
 
 .form__input {
   background: none;
   border: none;
   border-bottom: 2px solid #000000;
-  margin-bottom: 25px;
+  outline: none;
+  font-size: 17px;
+
+  @include tr;
+
+  @include min-width ($tablet-width) {
+    font-size: 19px;
+  }
+
+  &--radio,
+  &--check {
+    display: none;
+  }
 
   &--text {
     display: block;
     width: 100%;
-    padding: 20px 0;
+    padding: 18px 0;
+
+    &:hover,
+    &:active {
+      border-color: #62d1ba;
+    }
+
+    @include min-width ($tablet-width) {
+      padding: 15px;
+      padding-top: 25px;
+    }
+  }
+
+  &--phone {
+    padding-top: 0;
+    padding-bottom: 9px;
+
+    @include min-width ($tablet-width) {
+      padding: 25px 0 16px;
+      padding-left: 13px;
+    }
+  }
+
+  &--email {
+    padding-top: 0;
+    padding-bottom: 9px;
+
+    @include min-width ($tablet-width) {
+      padding: 26px 0 15px;
+      padding-left: 15px;
+    }
+  }
+}
+
+.form__input--radio + .form__label {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 62px;
+
+  @include min-width ($tablet-width) {
+    padding-top: 27px;
+    padding-left: 77px;
+    padding-bottom: 20px;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+  }
+
+  &::before {
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #444444;
+
+    @include min-width ($tablet-width) {
+      width: 52px;
+      height: 52px;
+      top: 11px;
+      left: -4px;
+    }
+  }
+
+  &::after {
+    top: 12px;
+    left: 12px;
+    width: 16px;
+    height: 16px;
+    background-color: transparent;
+
+    @include min-width ($tablet-width) {
+      width: 22px;
+      height: 22px;
+      top: 27px;
+      left: 11px;
+    }
+  }
+
+  &:hover {
+    &::before {
+      border-color: #69d3bd;
+    }
+  }
+
+  &:active {
+    &::before {
+      border-color: #c7c7c7;
+    }
+  }
+}
+
+.form__input--radio:checked + .form__label {
+  &::after {
+    background-color: #62d1ba;
+  }
+}
+
+.form__input--check + .form__label {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 62px;
+
+  @include min-width ($tablet-width) {
+    padding: 27px;
+    padding-left: 78px;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+
+    @include tr;
+  }
+
+  &::before {
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #444444;
+
+    @include min-width ($tablet-width) {
+      width: 54px;
+      height: 52px;
+      top: 12px;
+      left: -4px;
+    }
+  }
+
+  &::after {
+    top: 5px;
+    left: 14px;
+    width: 12px;
+    height: 22px;
+    transform: rotate(45deg);
+
+    @include min-width ($tablet-width) {
+      top: 19px;
+      left: 16px;
+      width: 17px;
+      height: 29px;
+    }
+  }
+
+  &:hover {
+    &::before {
+      border-color: #69d3bd;
+    }
+  }
+
+  &:active {
+    &::before {
+      border-color: #c7c7c7;
+    }
+  }
+}
+
+.form__input--check:checked + .form__label {
+  &::after {
+    border-right: 2px solid #231f20;
+    border-bottom: 2px solid #231f20;
   }
 }
 
 .form__textarea {
+  max-height: 145px;
   resize: none;
   width: 100%;
+  max-width: 700px;
   padding: 17px;
   border: 2px solid #000000;
+  outline: none;
+
+  @include tr;
+
+  @include min-width ($tablet-width) {
+    font-size: 19px;
+    margin-top: 15px;
+    padding: 10px;
+  }
+
+  @include min-width ($desktop-width) {
+    margin-top: 11px;
+  }
+
+  &:hover,
+  &:active {
+    border-color: #62d1ba;
+  }
 }
 
 .form__warning {
@@ -117,5 +463,17 @@
 
   @include min-width ($tablet-width) {
     margin-bottom: 0;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+}
+
+.form__btn {
+  width: 100%;
+  max-width: 260px;
+
+  @include min-width ($tablet-width) {
+    max-width: 230px;
   }
 }
