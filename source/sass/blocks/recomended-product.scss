@@ -70,7 +70,8 @@
   }
 
   @include min-width ($desktop-width) {
-    top: -150px;
+    top: -158px;
+    width: 60%;
   }
 }
 

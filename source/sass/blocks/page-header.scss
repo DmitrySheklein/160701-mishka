@@ -26,6 +26,7 @@
 }
 
 .page-header__logo {
+  position: relative;
   display: block;
   width: 86px;
   height: 35px;
@@ -33,10 +34,17 @@
 
   @include min-width ($tablet-width) {
     margin-left: 0;
+    width: 110px;
+    height: 35px;
+    top: -5px;
   }
 
   @include min-width ($desktop-width) {
     margin-left: auto;
+    width: 150px;
+    height: 35px;
+    top: -17px;
+    left: -27px;
   }
 }
 
