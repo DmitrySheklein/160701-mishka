@@ -25,6 +25,19 @@
   }
 }
 
+.page-footer__logo-img {
+
+  @include min-width ($tablet-width) {
+    width: 106px;
+    margin-left: 6px;
+  }
+  @include min-width ($tablet-width) {
+    width: 103px;
+    margin-left: 2px;
+  }
+}
+
+
 .page-footer__social {
   padding-bottom: 25px;
   margin-bottom: 23px;
@@ -34,6 +47,6 @@
     padding-bottom: 0;
     margin-bottom: 0;
     border: none;
-    margin-left: 94px;
+    margin-left: 78px;
   }
 }

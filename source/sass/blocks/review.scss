@@ -9,6 +9,10 @@
     padding-top: 0;
     padding-bottom: 0;
     margin-bottom: 72px;
+
+    @include min-res() {
+      background-image: url('../img/review@2x.jpg');
+    }
   }
 
   @include min-width ($desktop-width) {
@@ -34,6 +38,11 @@
     background-position: left;
     padding-top: 87px;
     padding-bottom: 102px;
+
+    @include min-res() {
+      background-image: url('../img/review@2x.jpg');
+
+    }
   }
 }
 

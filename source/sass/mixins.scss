@@ -44,3 +44,9 @@
     @content;
   }
 }
+
+@mixin min-res() {
+  @media (min-resolution: $retina-dpi),  (min-resolution: $retina-dppx) {
+    @content;
+  }
+}
