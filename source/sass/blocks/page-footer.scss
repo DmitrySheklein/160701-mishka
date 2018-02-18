@@ -26,11 +26,11 @@
 }
 
 .page-footer__logo-img {
-
   @include min-width ($tablet-width) {
     width: 106px;
     margin-left: 6px;
   }
+
   @include min-width ($tablet-width) {
     width: 103px;
     margin-left: 2px;
