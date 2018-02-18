@@ -1,0 +1,19 @@
+@include max-width ($tablet-width) {
+  .no-js .page-header__button {
+    display: none;
+  }
+
+  .no-js .page-header__wrapper {
+    padding-bottom: 0;
+  }
+
+  .no-js .main-nav {
+    padding-top: 22px;
+  }
+
+  .no-js .main-nav,
+  .no-js .user-nav {
+    display: block;
+    position: static;
+  }
+}

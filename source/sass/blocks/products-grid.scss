@@ -2,16 +2,24 @@
   margin-bottom: 30px;
   padding-top: 8px;
 
+  @include min-width ($tablet-width) {
+    margin-bottom: 48px;
+  }
+
   @include min-width ($desktop-width) {
     display: flex;
     flex-wrap: wrap;
     padding-top: 35px;
-    margin-bottom: 5px;
+    margin-bottom: 4px;
   }
 }
 
 .products-grid__item {
   margin-bottom: 30px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   @include min-width ($tablet-width) {
     margin-bottom: 55px;

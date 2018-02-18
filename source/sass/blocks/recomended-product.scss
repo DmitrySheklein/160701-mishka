@@ -64,7 +64,7 @@
   @include min-width ($tablet-width) {
     width: 50%;
     position: absolute;
-    top: 0;
+    top: 9px;
     right: 0;
     z-index: -1;
   }

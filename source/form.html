@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="no-js">
   <head>
     <meta charset="utf-8">
     <title>Форма</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.min.css">
     <script src="js/index.js"></script>
+    <script>
+      document.createElement("picture");
+    </script>
+    <script src="js/picturefill.js" async></script>
   </head>
   <body>
     <header class="page-header">
@@ -40,16 +44,18 @@
               <form class="search user-nav__search" method="get" action="https://echo.htmlacademy.ru">
                 <button class="search__button" type="submit">Поиск</button>
                 <div class="search__input-wrap">
-                  <input class="search__input" type="text" name="search-value" id="search-input" value="">
+                  <input class="search__input" type="text" name="search-value" id="search-input" value="" required>
                   <label class="search__label" for="search-input">Поиск по сайту</label>
                 </div>
               </form>
             </li>
             <li class="user-nav__item">
               <div class="cart user-nav__cart">
-                Корзина:
-                <a class="cart__count">
-                  пока пуста
+                <a>
+                  Корзина:
+                  <span class="cart__count">
+                    пока пуста
+                  </span>
                 </a>
               </div>
             </li>
@@ -80,7 +86,7 @@
         <form action="https://echo.htmlacademy.ru" method="get" class="form">
           <fieldset class="form__group">
             <div class="form__group__inner">
-              <legend class="form__group-title"><span>Тип</span></legend>
+              <span class="form__group-title"><span>Тип</span></span>
               <div class="form__body">
               <div class="form__input-wrap form__input-wrap--radio">
                 <input class="form__input form__input--radio" type="radio" id="radio1" value="Аксессуар для интерьера" name="type" checked>
@@ -95,7 +101,7 @@
           </fieldset>
           <fieldset class="form__group form__group--check form__group--grey">
             <div class="form__group__inner">
-              <legend class="form__group-title"><span>Цвет</span></legend>
+              <span class="form__group-title"><span>Цвет</span></span>
               <div class="form__body form__body--color">
                 <div class="form__input-wrap form__input-wrap--check">
                   <input class="form__input form__input--check" type="checkbox" id="check1" name="color" value="Белый" checked>
@@ -126,28 +132,28 @@
           </fieldset>
           <fieldset class="form__group form__group--text">
             <div class="form__group__inner">
-              <legend class="form__group-title"><span>ФИО</span></legend>
+              <span class="form__group-title"><span>ФИО</span></span>
               <div class="form__body">
                 <div class="form__input-wrap form__input-wrap--text">
-                  <label class="form__label form__label--text">Имя:</label>
-                  <input class="form__input form__input--text" type="text" placeholder="Введите ваше имя*" required>
+                  <label for="first-name" class="form__label form__label--text">Имя:</label>
+                  <input id="first-name" class="form__input form__input--text" type="text" placeholder="Введите ваше имя*" required>
                 </div>
                 <div class="form__input-wrap form__input-wrap--text">
-                  <label class="form__label form__label--text">Фамилия:</label>
-                  <input class="form__input form__input--text" type="text" placeholder="Укажите фамилию*" required>
+                  <label for="last-name" class="form__label form__label--text">Фамилия:</label>
+                  <input id="last-name" class="form__input form__input--text" type="text" placeholder="Укажите фамилию*" required>
                 </div>
                 <div class="form__input-wrap form__input-wrap--text">
-                  <label class="form__label form__label--text">Отчество:</label>
-                  <input class="form__input form__input--text" type="text" placeholder="Отчество, если желаете">
+                  <label for="third-name" class="form__label form__label--text">Отчество:</label>
+                  <input id="third-name" class="form__input form__input--text" type="text" placeholder="Отчество, если желаете">
                 </div>
               </div>
             </div>
           </fieldset>
           <fieldset class="form__group form__group--grey form__group--phone">
             <div class="form__group__inner">
-              <legend class="form__group-title"><span>Тел</span></legend>
+              <span class="form__group-title"><span>Тел</span></span>
               <div class="form__body">
-                <div class="form__input-wrap form__input-wrap--text">
+                <div class="form__input-wrap form__input-wrap--text form__input-wrap--phone">
                   <input class="form__input form__input--text form__input--phone" type="tel" placeholder="+7 ХХХ ХХ ХХ*" required>
                 </div>
               </div>
@@ -155,9 +161,9 @@
           </fieldset>
           <fieldset class="form__group form__group--grey form__group--email">
             <div class="form__group__inner">
-              <legend class="form__group-title"><span>E-mail</span></legend>
+              <span class="form__group-title"><span>E-mail</span></span>
               <div class="form__body">
-                <div class="form__input-wrap form__input-wrap--text">
+                <div class="form__input-wrap form__input-wrap--text form__input-wrap--email">
                   <input class="form__input form__input--text form__input--email" type="email" placeholder="Ваш Email*" required>
                 </div>
               </div>
@@ -165,10 +171,10 @@
           </fieldset>
           <fieldset class="form__group form__group--textarea">
             <div class="form__group__inner">
-              <legend class="form__group-title"><span>Доп</span></legend>
+              <span class="form__group-title"><span>Доп</span></span>
               <div class="form__body">
                 <div class="form__input-wrap">
-                  <textarea class="form__textarea" name="comment" id="" cols="30" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+                  <textarea class="form__textarea" name="comment" cols="30" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
                 </div>
               </div>
             </div>
@@ -186,7 +192,7 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <a href="#" class="page-footer__logo">
-          <img src="img/logo-mobile.svg" alt="" class="page-header__logo-img">
+          <img src="img/logo-mobile.svg" alt="" class="page-footer__logo-img">
         </a>
         <div class="page-footer__social social">
           <ul class="social__list">
@@ -202,9 +208,11 @@
           </ul>
         </div>
         <div class="page-footer__copyright copyright">
-          <b class="copyright__text">Разработано:</b>
-          <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
-            HTML Academy
+          <a href="https://htmlacademy.ru/intensive/adaptive">
+            <b class="copyright__text">Разработано</b>
+            <span class="copyright__link">
+              HTML Academy
+            </span>
           </a>
         </div>
       </div>
