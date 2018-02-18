@@ -1,0 +1,7 @@
+.no-js .main-nav,
+.no-js .user-nav {
+  @include max-width ($tablet-width) {
+    display: block;
+    position: static;
+  }
+}

@@ -90,6 +90,7 @@
 }
 
 .form__input-wrap {
+  position: relative;
   flex-grow: 1;
 
   &--radio {
@@ -141,6 +142,52 @@
       align-items: center;
       max-width: 700px;
       margin-bottom: 13px;
+    }
+  }
+
+  &--phone {
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: -9px;
+      right: 3px;
+      width: 30px;
+      height: 30px;
+      background-image: url("../img/icon-phone.svg");
+      background-repeat: no-repeat;
+
+      @include min-width ($tablet-width) {
+        top: 23px;
+        right: 22px;
+      }
+
+      @include min-width ($desktop-width) {
+        right: 6px;
+      }
+    }
+  }
+
+  &--email {
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: -9px;
+      right: 3px;
+      width: 33px;
+      height: 30px;
+      background-image: url("../img/icon-mail.svg");
+      background-repeat: no-repeat;
+
+      @include min-width ($tablet-width) {
+        top: 23px;
+        right: 22px;
+      }
+
+      @include min-width ($desktop-width) {
+        right: 6px;
+      }
     }
   }
 }

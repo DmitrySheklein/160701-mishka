@@ -1,7 +1,10 @@
 'use strict'
 
-window.onload = function () {
+document.addEventListener("DOMContentLoaded", function(event) {
+  document.documentElement.classList.remove("no-js");
+});
 
+window.onload = function () {
   // Mobile menu
   var navToggle = document.querySelector(".page-header__button");
   var userNav = document.querySelector(".user-nav");

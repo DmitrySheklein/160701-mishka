@@ -104,7 +104,9 @@
     display: flex;
     justify-content: space-between;
     position: absolute;
-    width: 100%;
+    z-index: 1;
+    left: 0;
+    right: 0;
     top: 100%;
   }
 }
