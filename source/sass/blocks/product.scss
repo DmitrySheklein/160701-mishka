@@ -67,7 +67,7 @@
   }
 
   @include min-width ($desktop-width) {
-    flex-grow: 1;
+    min-height: 194px;
   }
 }
 

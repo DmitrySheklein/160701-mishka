@@ -17,6 +17,10 @@
     @include min-width ($tablet-width) {
       margin-bottom: 50px;
     }
+
+    @include min-width ($desktop-width) {
+      margin-bottom: 46px;
+    }
   }
 }
 
@@ -44,7 +48,7 @@
       display: block;
       position: absolute;
       z-index: 1;
-      top: 100%;
+      top: 94%;
       left: 0;
       right: 0;
       height: 15px;

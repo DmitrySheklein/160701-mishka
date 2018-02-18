@@ -41,16 +41,18 @@
               <form class="search user-nav__search" method="get" action="https://echo.htmlacademy.ru">
                 <button class="search__button" type="submit">Поиск</button>
                 <div class="search__input-wrap">
-                  <input class="search__input" type="text" name="search-value" id="search-input" value="">
+                  <input class="search__input" type="text" name="search-value" id="search-input" value="" required>
                   <label class="search__label" for="search-input">Поиск по сайту</label>
                 </div>
               </form>
             </li>
             <li class="user-nav__item">
                 <div class="cart user-nav__cart">
-                  Корзина:
-                  <a class="cart__count">
-                    пока пуста
+                  <a>
+                    Корзина:
+                    <span class="cart__count">
+                      пока пуста
+                    </span>
                   </a>
                 </div>
             </li>
@@ -261,7 +263,7 @@
           <div class="page-footer__copyright copyright">
             <a href="https://htmlacademy.ru/intensive/adaptive">
             <b class="copyright__text">Разработано</b>
-            <span href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
+            <span class="copyright__link">
               HTML Academy
             </span>
             </a>
@@ -269,7 +271,7 @@
         </div>
     </footer>
 
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
     <script src="js/index.js"></script>
   </body>
 </html>
