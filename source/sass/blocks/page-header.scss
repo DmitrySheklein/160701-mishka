@@ -32,6 +32,7 @@
   width: 86px;
   height: 35px;
   margin: auto;
+
   a:hover {
     opacity: 0.6;
   }
@@ -145,6 +146,10 @@
   vertical-align: middle;
   margin-right: 30px;
   padding: 25px 0;
+
+  a {
+    color: #000000;
+  }
 
   @include min-width ($desktop-width) {
     padding: 18px 0;

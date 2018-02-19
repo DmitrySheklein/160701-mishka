@@ -82,6 +82,7 @@
   height: 52px;
   text-align: center;
   line-height: 52px;
+  font-weight: 700;
   border: 2px solid rgba(#444444, 0.1);
   cursor: pointer;
 
@@ -107,5 +108,15 @@
     max-width: 289px;
     margin: auto;
     display: block;
+  }
+
+  &:hover {
+    color: #ffffff;
+    background: #444444;
+  }
+
+  &:active {
+    color: rgba(#ffffff, 0.7);
+    background: #444444;
   }
 }

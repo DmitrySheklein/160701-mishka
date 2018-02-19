@@ -87,6 +87,10 @@
   font-weight: 700;
   line-height: 30px;
 
+  a {
+    color: #000000;
+  }
+
   @include min-width ($tablet-width) {
     font-size: 43px;
     line-height: 50px;
