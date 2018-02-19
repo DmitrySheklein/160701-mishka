@@ -303,8 +303,12 @@
     width: 100%;
     padding: 18px 0;
 
-    &:hover,
-    &:active {
+    &:hover {
+      border-color: #62d1ba;
+    }
+
+    &:focus {
+      color: #444444;
       border-color: #62d1ba;
     }
 

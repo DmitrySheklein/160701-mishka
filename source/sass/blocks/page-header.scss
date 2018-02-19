@@ -3,6 +3,7 @@
   box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
 
   @include min-width ($tablet-width) {
+    height: 89px;
     border-bottom: 1px solid #e7e7e7;
   }
 }
@@ -31,6 +32,13 @@
   width: 86px;
   height: 35px;
   margin: auto;
+  a:hover {
+    opacity: 0.6;
+  }
+
+  a:active {
+    opacity: 0.3;
+  }
 
   @include min-width ($tablet-width) {
     margin-left: 0;
@@ -103,11 +111,9 @@
   @include min-width ($tablet-width) {
     display: flex;
     justify-content: space-between;
-    position: absolute;
+    position: static;
     z-index: 1;
-    left: 0;
-    right: 0;
-    top: 100%;
+    width: 100%;
   }
 }
 

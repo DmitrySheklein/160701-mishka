@@ -15,8 +15,8 @@
   @include min-width ($tablet-width) {
     order: 1;
     position: absolute;
-    z-index: 1;
-    top: 101%;
+    z-index: 10;
+    top: 89px;
   }
 
   @include min-width ($desktop-width) {

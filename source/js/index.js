@@ -22,6 +22,22 @@ window.onload = function () {
       mainNav.classList.add("main-nav--active");
     }
   });
+  //Modal form
+  var modal = document.querySelector('.modal-order');
+  var orderBtn = document.querySelectorAll(".btn--order,.btn--add-cart");
+  var modalBtnSubmit = modal.querySelector(".modal-order__add-button");
+
+  for( var i = 0; i < orderBtn.length; i++) {
+    orderBtn[i].addEventListener('click', function (event) {
+      event.preventDefault()
+      modal.classList.toggle('modal-order--active');
+    })
+  }
+
+  modalBtnSubmit.addEventListener('click', function (event) {
+    event.preventDefault();
+    modal.classList.toggle("modal-order--active");
+  })
 
   //Map
     var map = document.querySelector("#map");
