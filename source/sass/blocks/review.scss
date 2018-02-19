@@ -147,6 +147,14 @@
   background-repeat: no-repeat;
   background-size: 50px 26px;
 
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   &--prev {
     background-image: url("../img/icon-left-arrow.svg");
     background-position: center;

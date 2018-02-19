@@ -22,8 +22,8 @@
   }
 
   &:active {
-    color: rgba(#ffffff, 0.3);
-    background: #7c7c7c;
+    color: rgba(#ffffff, 0.7);
+    background: #444444;
   }
 
   &--green {
@@ -38,7 +38,8 @@
   }
 
   &--add-cart {
-    @include btnclr;
+    font-size: 0;
+    border: none;
     width: 21px;
     height: 18px;
     padding: 0;
