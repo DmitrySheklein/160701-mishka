@@ -35,9 +35,9 @@
   }
 
   @include min-width ($tablet-width) {
-    width: 106px;
-    height: 34px;
-    margin-left: 6px;
+    width: 98px;
+    height: 40px;
+    margin-left: 2px;
   }
 
   @include min-width ($desktop-width) {
