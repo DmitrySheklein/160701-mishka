@@ -26,13 +26,23 @@
 }
 
 .page-footer__logo-img {
-  @include min-width ($tablet-width) {
-    width: 106px;
-    margin-left: 6px;
+  &:hover {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 
   @include min-width ($tablet-width) {
-    width: 103px;
+    width: 98px;
+    height: 40px;
+    margin-left: 2px;
+  }
+
+  @include min-width ($desktop-width) {
+    width: 102px;
+    height: 43px;
     margin-left: 2px;
   }
 }
@@ -48,5 +58,19 @@
     margin-bottom: 0;
     border: none;
     margin-left: 78px;
+  }
+}
+
+.page-footer__copyright {
+  .copyright__icon {
+    fill: #63d1bb;
+  }
+
+  &:hover .copyright__icon {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }

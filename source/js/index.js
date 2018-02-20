@@ -2,6 +2,7 @@
 
 document.addEventListener("DOMContentLoaded", function(event) {
   document.documentElement.classList.remove("no-js");
+  svg4everybody();
 });
 
 window.onload = function () {

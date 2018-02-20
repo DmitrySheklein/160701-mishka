@@ -146,16 +146,13 @@
   }
 
   &--phone {
-    &::before {
-      content: "";
+    .form__input__icon-phone {
       display: block;
       position: absolute;
-      top: -9px;
-      right: 3px;
-      width: 30px;
-      height: 30px;
-      background-image: url("../img/icon-phone.svg");
-      background-repeat: no-repeat;
+      top: -12px;
+      right: 7px;
+      width: 26px;
+      height: 27px;
 
       @include min-width ($tablet-width) {
         top: 23px;
@@ -169,16 +166,13 @@
   }
 
   &--email {
-    &::before {
-      content: "";
+    .form__input__icon-email {
       display: block;
       position: absolute;
-      top: -9px;
+      top: -6px;
       right: 3px;
       width: 33px;
       height: 30px;
-      background-image: url("../img/icon-mail.svg");
-      background-repeat: no-repeat;
 
       @include min-width ($tablet-width) {
         top: 23px;
@@ -305,6 +299,11 @@
 
     &:hover {
       border-color: #62d1ba;
+    }
+
+    &:hover + svg,
+    &:focus + svg {
+      fill: #62d1ba;
     }
 
     &:focus {

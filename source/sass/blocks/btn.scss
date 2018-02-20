@@ -43,11 +43,10 @@
     width: 21px;
     height: 18px;
     padding: 0;
-    background: transparent url("../img/icon-cart.svg") no-repeat;
 
     &:hover {
-      background: transparent url("../img/icon-cart.svg") no-repeat;
       opacity: 0.4;
+      background: none;
     }
   }
 }

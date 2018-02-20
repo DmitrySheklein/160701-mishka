@@ -12,6 +12,7 @@ var run = require("run-sequence");
 var del = require("del");
 var imagemin = require("gulp-imagemin");
 var svgstore = require("gulp-svgstore");
+var svgmin = require("gulp-svgmin");
 
 gulp.task("style", function() {
   gulp.src("source/sass/style.scss")
@@ -88,7 +89,8 @@ gulp.task("images", function() {
 });
 
 gulp.task("sprite", function () {
-  return gulp.src("build/img/icon-*.svg")
+  return gulp.src("build/img/*.svg")
+    .pipe(svgmin())
     .pipe(svgstore({
       inlineSvg: true
     }))
