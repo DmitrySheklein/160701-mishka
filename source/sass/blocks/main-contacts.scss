@@ -13,7 +13,8 @@
       position: absolute;
       top: 0;
       left: 0;
-      width: 100%;
+      right: 0;
+      width: auto;
       height: 23px;
       background-image: url("../img/bg-zigzag-line.svg");
     }
@@ -28,8 +29,9 @@
     &::before {
       top: -13px;
       max-width: 1050px;
-      left: 50%;
-      transform: translateX(-50%);
+      left: 0;
+      right: 0;
+      transform: none;
     }
   }
 }

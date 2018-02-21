@@ -34,8 +34,8 @@
   @include min-width ($desktop-width) {
     padding-left: 175px;
     background-image: url("../img/review@1x.jpg");
+    background-position: 0 17px;
     background-repeat: no-repeat;
-    background-position: left;
     padding-top: 87px;
     padding-bottom: 102px;
 
@@ -98,6 +98,10 @@
 
   @include min-width ($tablet-width) {
     font-size: 18px;
+  }
+
+  @include min-width ($desktop-width) {
+    font-size: 17px;
   }
 }
 
