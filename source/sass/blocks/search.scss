@@ -21,6 +21,7 @@
   height: 18px;
   padding: 0;
   cursor: pointer;
+  opacity: 0.2;
 
   @include min-width ($tablet-width) {
     position: static;
