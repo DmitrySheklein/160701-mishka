@@ -17,7 +17,7 @@
     flex-grow: 1;
   }
 
-  &:after {
+  &::after {
     content: "";
     position: absolute;
     bottom: -5px;
