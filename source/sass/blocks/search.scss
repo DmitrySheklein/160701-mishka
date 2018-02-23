@@ -1,6 +1,14 @@
 .search {
   position: relative;
 
+  .search__icon {
+    opacity: 0.2;
+  }
+
+  &:hover .search__label {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
   &:hover .search__icon {
     fill: #63d1bb;
     opacity: 1;

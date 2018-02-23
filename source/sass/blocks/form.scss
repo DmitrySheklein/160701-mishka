@@ -289,7 +289,14 @@
 
   &--radio,
   &--check {
-    display: none;
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
   }
 
   &--text {
@@ -406,6 +413,13 @@
   }
 }
 
+.form__input--radio:focus + .form__label {
+  &::before {
+    border-color: #69d3bd;
+  }
+}
+
+
 .form__input--check + .form__label {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -472,6 +486,12 @@
   &::after {
     border-right: 2px solid #231f20;
     border-bottom: 2px solid #231f20;
+  }
+}
+
+.form__input--check:focus + .form__label {
+  &::before {
+    border-color: #69d3bd;
   }
 }
 

@@ -6,32 +6,11 @@
   @include min-width ($tablet-width) {
     padding-top: 65px;
     padding-bottom: 28px;
-
-    &::before {
-      content: "";
-      display: block;
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      width: auto;
-      height: 23px;
-      background-image: url("../img/bg-zigzag-line.svg");
-    }
   }
 
   @include min-width ($desktop-width) {
     padding-top: 81px;
     padding-bottom: 18px;
-
-    &::before {
-      max-width: 1050px;
-      left: 0;
-      right: 0;
-      transform: none;
-      margin-left: auto;
-      margin-right: auto;
-    }
   }
 }
 
@@ -43,8 +22,44 @@
 }
 
 .about__wrapper {
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-size: contain;
+  }
+
+  @include min-width ($tablet-width) {
+    &::before {
+      width: auto;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 23px;
+      background-size: initial;
+      background-repeat: no-repeat;
+    }
+  }
+
   @include min-width ($desktop-width) {
+    position: relative;
     padding-left: 175px;
+
+    &::before {
+      max-width: 1050px;
+      top: -80px;
+      left: 0;
+      right: 0;
+      transform: none;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 }
 

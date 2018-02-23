@@ -1,11 +1,11 @@
 .main-nav {
   @include max-width ($mobile-width) {
     display: none;
-    position: absolute;
+    position: static;
     z-index: 10;
     width: 100%;
-    top: 100%;
     background: #ffffff;
+    margin-top: 22px;
 
     &--active {
       display: block;
@@ -14,7 +14,6 @@
 
   @include min-width ($tablet-width) {
     order: 1;
-    position: absolute;
     z-index: 10;
     top: 89px;
   }

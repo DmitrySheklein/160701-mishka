@@ -114,6 +114,10 @@
     justify-content: space-between;
     position: static;
     z-index: 1;
+    order: 1;
+  }
+
+  @include min-width ($desktop-width) {
     width: 100%;
   }
 }
